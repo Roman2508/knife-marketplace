@@ -1,14 +1,16 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useAppStore } from "@/lib/store"
-import { ItemCard } from "@/components/item-card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, TrendingUp, Zap } from "lucide-react"
+import Link from "next/link";
+import { useAppStore } from "@/lib/store";
+import { ItemCard } from "@/components/item-card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, TrendingUp, Zap } from "lucide-react";
 
 export function FeaturedItems() {
-  const { items } = useAppStore()
-  const featuredItems = items.filter((item) => item.status === "approved").slice(0, 6)
+  const { items } = useAppStore();
+  const featuredItems = items
+    .filter((item) => item.status === "approved")
+    .slice(0, 6);
 
   return (
     <section className="relative overflow-hidden bg-background py-24">
@@ -24,20 +26,24 @@ export function FeaturedItems() {
               <TrendingUp className="h-8 w-8 text-background" />
             </div>
             <div className="h-1 w-32 bg-foreground"></div>
-            <span className="text-sm font-black uppercase tracking-[0.3em]">TRENDING</span>
+            <span className="text-sm font-black uppercase tracking-[0.3em]">
+              В ТРЕНДІ
+            </span>
           </div>
 
           <h2 className="mb-4 font-black leading-none">
-            <span className="block text-6xl uppercase tracking-tighter sm:text-8xl">FEATURED</span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-6xl uppercase italic tracking-tighter text-transparent sm:text-8xl">
-              LISTINGS
+            <span className="block uppercase tracking-tighter text-4xl sm:text-6xl lg:text-8xl">
+              РЕКОМЕНДОВАНІ
+            </span>
+            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text uppercase italic tracking-tighter text-transparent text-4xl sm:text-6xl lg:text-8xl">
+              ПРОПОЗИЦІЇ
             </span>
           </h2>
 
           <div className="flex items-center gap-4">
             <Zap className="h-6 w-6 text-primary" />
-            <p className="max-w-xl text-lg font-bold uppercase tracking-wide text-muted-foreground">
-              Curated picks from verified collectors
+            <p className="max-w-xl text-base sm:text-lg font-bold uppercase tracking-wide text-muted-foreground">
+              ПІДБІРКА ПРОПОЗИЦІЙ ВІД ПЕРЕВІРЕНИХ ПРОДАВЦІВ
             </p>
           </div>
         </div>
@@ -49,7 +55,8 @@ export function FeaturedItems() {
               key={item.id}
               className={index === 0 ? "sm:col-span-2 lg:col-span-1" : ""}
               style={{
-                transform: index % 2 === 0 ? "translateY(0)" : "translateY(2rem)",
+                transform:
+                  index % 2 === 0 ? "translateY(0)" : "translateY(2rem)",
               }}
             >
               <ItemCard item={item} />
@@ -65,12 +72,12 @@ export function FeaturedItems() {
             className="group relative border-4 border-foreground bg-accent px-12 py-8 text-xl font-black uppercase tracking-wider text-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1"
           >
             <Link href="/browse">
-              View All Listings
+              ПЕРЕГЛЯНУТИ ВСІ ПРОПОЗИЦІЇ
               <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
             </Link>
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }

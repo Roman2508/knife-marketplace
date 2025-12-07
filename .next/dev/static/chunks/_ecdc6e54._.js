@@ -247,7 +247,7 @@ const mockItems = [
         sellerAvatar: "/bearded-man-avatar.png",
         condition: "like-new",
         brand: "Microtech",
-        status: "pending",
+        status: "approved",
         createdAt: "2024-01-20",
         specs: {
             "Blade Length": "3.35 inches",
@@ -260,6 +260,204 @@ const mockItems = [
     {
         id: "item-8",
         title: "Grand Seiko SBGA413 Spring Drive",
+        description: "Stunning snowflake dial. Full kit with warranty card dated 2023.",
+        price: 5800,
+        category: "watch",
+        images: [
+            "/grand-seiko-spring-drive-snowflake-dial-watch.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Grand Seiko",
+        status: "approved",
+        createdAt: "2024-01-18",
+        specs: {
+            "Case Diameter": "40mm",
+            Movement: "9R65 Spring Drive",
+            "Water Resistance": "100m",
+            Crystal: "Sapphire",
+            "Power Reserve": "72 hours"
+        }
+    },
+    {
+        id: "item-9",
+        title: "Benchmade Bugout 535BK-3",
+        description: "Lightweight everyday carry knife with CPM-S30V blade steel. Perfect for outdoor enthusiasts. Minimal signs of use, blade is factory sharp.",
+        price: 1451,
+        category: "knife",
+        images: [
+            "/benchmade-bugout-folding-knife-black.jpg",
+            "/folding-knife-blade-detail.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "like-new",
+        brand: "Benchmade",
+        status: "approved",
+        createdAt: "2024-01-15",
+        specs: {
+            "Blade Length": "3.24 inches",
+            "Blade Steel": "CPM-S30V",
+            "Handle Material": "CF-Elite",
+            Weight: "1.85 oz",
+            "Lock Type": "AXIS Lock"
+        }
+    },
+    {
+        id: "item-10",
+        title: "Omega Seamaster Planet Ocean 700M",
+        description: "Professional dive watch in excellent condition. Full box and papers included. Recently serviced by Omega certified technician.",
+        price: 4850,
+        category: "watch",
+        images: [
+            "/omega-seamaster-planet-ocean-dive-watch.jpg",
+            "/luxury-watch-caseback-omega.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Omega",
+        status: "approved",
+        createdAt: "2024-01-10",
+        specs: {
+            "Case Diameter": "43.5mm",
+            Movement: "Co-Axial 8900",
+            "Water Resistance": "600m",
+            Crystal: "Sapphire",
+            "Power Reserve": "60 hours"
+        }
+    },
+    {
+        id: "item-11",
+        title: "Chris Reeve Sebenza 41 Large",
+        description: "The legendary Sebenza 31. This is the large version with S45VN blade. Pristine condition, carried a handful of times.",
+        price: 425,
+        category: "knife",
+        images: [
+            "/chris-reeve-sebenza-folding-knife-titanium.jpg",
+            "/premium-folding-knife-open-blade.jpg"
+        ],
+        sellerId: "user-3",
+        sellerName: "EdgeMaster",
+        sellerAvatar: "/man-with-glasses-avatar.png",
+        condition: "like-new",
+        brand: "Chris Reeve Knives",
+        status: "approved",
+        createdAt: "2024-01-08",
+        specs: {
+            "Blade Length": "3.625 inches",
+            "Blade Steel": "S45VN",
+            "Handle Material": "Titanium",
+            Weight: "4.7 oz",
+            "Lock Type": "Frame Lock"
+        }
+    },
+    {
+        id: "item-12",
+        title: "Rolex Submariner Date 116610LN",
+        description: "2023 model with remaining warranty. Worn sparingly, in mint condition. All original links, box, and papers.",
+        price: 12500,
+        category: "watch",
+        images: [
+            "/rolex-submariner-black-dial-steel-watch.jpg",
+            "/rolex-watch-bracelet-clasp-detail.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Rolex",
+        status: "approved",
+        createdAt: "2024-01-05",
+        specs: {
+            "Case Diameter": "41mm",
+            Movement: "Caliber 3235",
+            "Water Resistance": "300m",
+            Crystal: "Sapphire",
+            "Power Reserve": "70 hours"
+        }
+    },
+    {
+        id: "item-13",
+        title: "Spyderco Para Military 12",
+        description: "Classic EDC knife in S45VN. Well broken in action, smooth as butter. Some light scratches on the clip.",
+        price: 125,
+        category: "knife",
+        images: [
+            "/spyderco-paramilitary-2-folding-knife.jpg",
+            "/tactical-folding-knife-blade.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "good",
+        brand: "Spyderco",
+        status: "approved",
+        createdAt: "2024-01-03",
+        specs: {
+            "Blade Length": "3.42 inches",
+            "Blade Steel": "S45VN",
+            "Handle Material": "G-10",
+            Weight: "3.75 oz",
+            "Lock Type": "Compression Lock"
+        }
+    },
+    {
+        id: "item-14",
+        title: "Tudor Black Bay 48",
+        description: "Beautiful vintage-inspired diver. Blue dial version. Excellent condition with Tudor fabric strap.",
+        price: 3200,
+        category: "watch",
+        images: [
+            "/tudor-black-bay-58-blue-dial-watch.jpg",
+            "/dive-watch-nato-strap-detail.jpg"
+        ],
+        sellerId: "user-3",
+        sellerName: "EdgeMaster",
+        sellerAvatar: "/man-with-glasses-avatar.png",
+        condition: "like-new",
+        brand: "Tudor",
+        status: "approved",
+        createdAt: "2024-01-01",
+        specs: {
+            "Case Diameter": "39mm",
+            Movement: "MT5402",
+            "Water Resistance": "200m",
+            Crystal: "Sapphire",
+            "Power Reserve": "70 hours"
+        }
+    },
+    {
+        id: "item-15",
+        title: "Microtech Ultratech 2",
+        description: "OTF automatic knife. Like new in box. Fires hard with no blade play.",
+        price: 280,
+        category: "knife",
+        images: [
+            "/microtech-ultratech-otf-automatic-knife.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "like-new",
+        brand: "Microtech",
+        status: "pending",
+        createdAt: "2024-01-20",
+        specs: {
+            "Blade Length": "3.35 inches",
+            "Blade Steel": "M390",
+            "Handle Material": "Aluminum",
+            Weight: "3.4 oz",
+            "Lock Type": "OTF Slide Lock"
+        }
+    },
+    {
+        id: "item-16",
+        title: "Grand Seiko SBGA413 Spring Drive 2",
         description: "Stunning snowflake dial. Full kit with warranty card dated 2023.",
         price: 5800,
         category: "watch",
@@ -622,32 +820,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 ;
 ;
 ;
-const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
     variants: {
         variant: {
-            default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-            destructive: 'bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
-            outline: 'border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50',
-            secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-            ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-            link: 'text-primary underline-offset-4 hover:underline'
+            default: "bg-primary text-primary-foreground hover:bg-primary/90",
+            destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+            outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 dark:hover:text-foreground",
+            secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+            ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 dark:hover:text-foreground",
+            link: "text-primary underline-offset-4 hover:underline"
         },
         size: {
-            default: 'h-9 px-4 py-2 has-[>svg]:px-3',
-            sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
-            lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
-            icon: 'size-9',
-            'icon-sm': 'size-8',
-            'icon-lg': 'size-10'
+            default: "h-9 px-4 py-2 has-[>svg]:px-3",
+            sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+            lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+            icon: "size-9",
+            "icon-sm": "size-8",
+            "icon-lg": "size-10"
         }
     },
     defaultVariants: {
-        variant: 'default',
-        size: 'default'
+        variant: "default",
+        size: "default"
     }
 });
 function Button({ className, variant, size, asChild = false, ...props }) {
-    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Slot"] : 'button';
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Slot"] : "button";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
         "data-slot": "button",
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(buttonVariants({

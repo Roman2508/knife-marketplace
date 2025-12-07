@@ -244,7 +244,7 @@ const mockItems = [
         sellerAvatar: "/bearded-man-avatar.png",
         condition: "like-new",
         brand: "Microtech",
-        status: "pending",
+        status: "approved",
         createdAt: "2024-01-20",
         specs: {
             "Blade Length": "3.35 inches",
@@ -257,6 +257,204 @@ const mockItems = [
     {
         id: "item-8",
         title: "Grand Seiko SBGA413 Spring Drive",
+        description: "Stunning snowflake dial. Full kit with warranty card dated 2023.",
+        price: 5800,
+        category: "watch",
+        images: [
+            "/grand-seiko-spring-drive-snowflake-dial-watch.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Grand Seiko",
+        status: "approved",
+        createdAt: "2024-01-18",
+        specs: {
+            "Case Diameter": "40mm",
+            Movement: "9R65 Spring Drive",
+            "Water Resistance": "100m",
+            Crystal: "Sapphire",
+            "Power Reserve": "72 hours"
+        }
+    },
+    {
+        id: "item-9",
+        title: "Benchmade Bugout 535BK-3",
+        description: "Lightweight everyday carry knife with CPM-S30V blade steel. Perfect for outdoor enthusiasts. Minimal signs of use, blade is factory sharp.",
+        price: 1451,
+        category: "knife",
+        images: [
+            "/benchmade-bugout-folding-knife-black.jpg",
+            "/folding-knife-blade-detail.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "like-new",
+        brand: "Benchmade",
+        status: "approved",
+        createdAt: "2024-01-15",
+        specs: {
+            "Blade Length": "3.24 inches",
+            "Blade Steel": "CPM-S30V",
+            "Handle Material": "CF-Elite",
+            Weight: "1.85 oz",
+            "Lock Type": "AXIS Lock"
+        }
+    },
+    {
+        id: "item-10",
+        title: "Omega Seamaster Planet Ocean 700M",
+        description: "Professional dive watch in excellent condition. Full box and papers included. Recently serviced by Omega certified technician.",
+        price: 4850,
+        category: "watch",
+        images: [
+            "/omega-seamaster-planet-ocean-dive-watch.jpg",
+            "/luxury-watch-caseback-omega.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Omega",
+        status: "approved",
+        createdAt: "2024-01-10",
+        specs: {
+            "Case Diameter": "43.5mm",
+            Movement: "Co-Axial 8900",
+            "Water Resistance": "600m",
+            Crystal: "Sapphire",
+            "Power Reserve": "60 hours"
+        }
+    },
+    {
+        id: "item-11",
+        title: "Chris Reeve Sebenza 41 Large",
+        description: "The legendary Sebenza 31. This is the large version with S45VN blade. Pristine condition, carried a handful of times.",
+        price: 425,
+        category: "knife",
+        images: [
+            "/chris-reeve-sebenza-folding-knife-titanium.jpg",
+            "/premium-folding-knife-open-blade.jpg"
+        ],
+        sellerId: "user-3",
+        sellerName: "EdgeMaster",
+        sellerAvatar: "/man-with-glasses-avatar.png",
+        condition: "like-new",
+        brand: "Chris Reeve Knives",
+        status: "approved",
+        createdAt: "2024-01-08",
+        specs: {
+            "Blade Length": "3.625 inches",
+            "Blade Steel": "S45VN",
+            "Handle Material": "Titanium",
+            Weight: "4.7 oz",
+            "Lock Type": "Frame Lock"
+        }
+    },
+    {
+        id: "item-12",
+        title: "Rolex Submariner Date 116610LN",
+        description: "2023 model with remaining warranty. Worn sparingly, in mint condition. All original links, box, and papers.",
+        price: 12500,
+        category: "watch",
+        images: [
+            "/rolex-submariner-black-dial-steel-watch.jpg",
+            "/rolex-watch-bracelet-clasp-detail.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Rolex",
+        status: "approved",
+        createdAt: "2024-01-05",
+        specs: {
+            "Case Diameter": "41mm",
+            Movement: "Caliber 3235",
+            "Water Resistance": "300m",
+            Crystal: "Sapphire",
+            "Power Reserve": "70 hours"
+        }
+    },
+    {
+        id: "item-13",
+        title: "Spyderco Para Military 12",
+        description: "Classic EDC knife in S45VN. Well broken in action, smooth as butter. Some light scratches on the clip.",
+        price: 125,
+        category: "knife",
+        images: [
+            "/spyderco-paramilitary-2-folding-knife.jpg",
+            "/tactical-folding-knife-blade.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "good",
+        brand: "Spyderco",
+        status: "approved",
+        createdAt: "2024-01-03",
+        specs: {
+            "Blade Length": "3.42 inches",
+            "Blade Steel": "S45VN",
+            "Handle Material": "G-10",
+            Weight: "3.75 oz",
+            "Lock Type": "Compression Lock"
+        }
+    },
+    {
+        id: "item-14",
+        title: "Tudor Black Bay 48",
+        description: "Beautiful vintage-inspired diver. Blue dial version. Excellent condition with Tudor fabric strap.",
+        price: 3200,
+        category: "watch",
+        images: [
+            "/tudor-black-bay-58-blue-dial-watch.jpg",
+            "/dive-watch-nato-strap-detail.jpg"
+        ],
+        sellerId: "user-3",
+        sellerName: "EdgeMaster",
+        sellerAvatar: "/man-with-glasses-avatar.png",
+        condition: "like-new",
+        brand: "Tudor",
+        status: "approved",
+        createdAt: "2024-01-01",
+        specs: {
+            "Case Diameter": "39mm",
+            Movement: "MT5402",
+            "Water Resistance": "200m",
+            Crystal: "Sapphire",
+            "Power Reserve": "70 hours"
+        }
+    },
+    {
+        id: "item-15",
+        title: "Microtech Ultratech 2",
+        description: "OTF automatic knife. Like new in box. Fires hard with no blade play.",
+        price: 280,
+        category: "knife",
+        images: [
+            "/microtech-ultratech-otf-automatic-knife.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "like-new",
+        brand: "Microtech",
+        status: "pending",
+        createdAt: "2024-01-20",
+        specs: {
+            "Blade Length": "3.35 inches",
+            "Blade Steel": "M390",
+            "Handle Material": "Aluminum",
+            Weight: "3.4 oz",
+            "Lock Type": "OTF Slide Lock"
+        }
+    },
+    {
+        id: "item-16",
+        title: "Grand Seiko SBGA413 Spring Drive 2",
         description: "Stunning snowflake dial. Full kit with warranty card dated 2023.",
         price: 5800,
         category: "watch",
@@ -613,32 +811,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 ;
 ;
 ;
-const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
     variants: {
         variant: {
-            default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-            destructive: 'bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
-            outline: 'border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50',
-            secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-            ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-            link: 'text-primary underline-offset-4 hover:underline'
+            default: "bg-primary text-primary-foreground hover:bg-primary/90",
+            destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+            outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 dark:hover:text-foreground",
+            secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+            ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 dark:hover:text-foreground",
+            link: "text-primary underline-offset-4 hover:underline"
         },
         size: {
-            default: 'h-9 px-4 py-2 has-[>svg]:px-3',
-            sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
-            lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
-            icon: 'size-9',
-            'icon-sm': 'size-8',
-            'icon-lg': 'size-10'
+            default: "h-9 px-4 py-2 has-[>svg]:px-3",
+            sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+            lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+            icon: "size-9",
+            "icon-sm": "size-8",
+            "icon-lg": "size-10"
         }
     },
     defaultVariants: {
-        variant: 'default',
-        size: 'default'
+        variant: "default",
+        size: "default"
     }
 });
 function Button({ className, variant, size, asChild = false, ...props }) {
-    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"] : 'button';
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"] : "button";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
         "data-slot": "button",
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(buttonVariants({
@@ -1020,24 +1218,24 @@ function ThemeToggle() {
         variant: "ghost",
         size: "icon",
         onClick: toggleTheme,
-        className: "h-9 w-9",
+        className: "hidden border-2 rounded-none border-muted-foreground dark:border-foreground bg-background px-4 py-2 text-xs font-black uppercase tracking-wider shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] sm:flex",
         "aria-label": "Toggle theme",
         children: theme === "light" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
             className: "h-5 w-5"
         }, void 0, false, {
             fileName: "[project]/components/theme-toggle.tsx",
-            lineNumber: 29,
-            columnNumber: 28
+            lineNumber: 38,
+            columnNumber: 9
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
             className: "h-5 w-5"
         }, void 0, false, {
             fileName: "[project]/components/theme-toggle.tsx",
-            lineNumber: 29,
-            columnNumber: 59
+            lineNumber: 40,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/theme-toggle.tsx",
-        lineNumber: 28,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
@@ -1120,17 +1318,17 @@ function Navigation() {
                                     children: "EDGE"
                                 }, void 0, false, {
                                     fileName: "[project]/components/navigation.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 52,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/navigation.tsx",
-                                lineNumber: 38,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/navigation.tsx",
-                            lineNumber: 37,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1143,27 +1341,27 @@ function Navigation() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/navigation.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 71,
                                             columnNumber: 31
                                         }, this),
                                         link.label
                                     ]
                                 }, link.href, true, {
                                     fileName: "[project]/components/navigation.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 60,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/navigation.tsx",
-                            lineNumber: 45,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-2",
+                            className: "flex items-center gap-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$theme$2d$toggle$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ThemeToggle"], {}, void 0, false, {
                                     fileName: "[project]/components/navigation.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 currentUser ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1171,7 +1369,7 @@ function Navigation() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                             asChild: true,
                                             variant: "ghost",
-                                            className: "hidden border-2 border-foreground bg-background px-4 py-2 text-xs font-black uppercase tracking-wider shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] sm:flex",
+                                            className: "hidden border-2 rounded-none border-foreground bg-background px-4 py-2 text-xs font-black uppercase tracking-wider shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] sm:flex",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/sell",
                                                 children: [
@@ -1179,30 +1377,30 @@ function Navigation() {
                                                         className: "mr-2 h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/navigation.tsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 88,
                                                         columnNumber: 21
                                                     }, this),
-                                                    "Sell"
+                                                    "ПРОДАТИ"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/navigation.tsx",
-                                                lineNumber: 73,
+                                                lineNumber: 87,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/navigation.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 82,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/messages",
-                                            className: "relative flex h-10 w-10 items-center justify-center border-2 border-foreground bg-background shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-accent hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]",
+                                            className: "relative flex h-9 w-9 items-center justify-center border-2 border-foreground bg-background shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-accent hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
                                                     className: "h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/navigation.tsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 97,
                                                     columnNumber: 19
                                                 }, this),
                                                 unreadMessages > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1210,13 +1408,13 @@ function Navigation() {
                                                     children: unreadMessages
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/navigation.tsx",
-                                                    lineNumber: 85,
+                                                    lineNumber: 99,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/navigation.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 93,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenu"], {
@@ -1225,16 +1423,16 @@ function Navigation() {
                                                     asChild: true,
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                         variant: "ghost",
-                                                        className: "h-10 w-10 border-2 border-foreground bg-background p-0 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]",
+                                                        className: "h-9 w-9 rounded-none border-2 border-foreground bg-background p-0 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Avatar"], {
-                                                            className: "h-8 w-8",
+                                                            className: "h-8 w-8 rounded-none",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarImage"], {
                                                                     src: currentUser.avatar || "/placeholder.svg",
                                                                     alt: currentUser.username
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/navigation.tsx",
-                                                                    lineNumber: 98,
+                                                                    lineNumber: 112,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
@@ -1242,23 +1440,23 @@ function Navigation() {
                                                                     children: currentUser.username[0]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/navigation.tsx",
-                                                                    lineNumber: 99,
+                                                                    lineNumber: 116,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 97,
+                                                            lineNumber: 111,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/navigation.tsx",
-                                                        lineNumber: 93,
+                                                        lineNumber: 107,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/navigation.tsx",
-                                                    lineNumber: 92,
+                                                    lineNumber: 106,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -1275,20 +1473,20 @@ function Navigation() {
                                                                             src: currentUser.avatar || "/placeholder.svg"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/navigation.tsx",
-                                                                            lineNumber: 109,
+                                                                            lineNumber: 128,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
                                                                             children: currentUser.username[0]
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/navigation.tsx",
-                                                                            lineNumber: 110,
+                                                                            lineNumber: 131,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/navigation.tsx",
-                                                                    lineNumber: 108,
+                                                                    lineNumber: 127,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1299,7 +1497,7 @@ function Navigation() {
                                                                             children: currentUser.username
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/navigation.tsx",
-                                                                            lineNumber: 113,
+                                                                            lineNumber: 136,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1307,24 +1505,24 @@ function Navigation() {
                                                                             children: currentUser.email
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/navigation.tsx",
-                                                                            lineNumber: 114,
+                                                                            lineNumber: 139,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/navigation.tsx",
-                                                                    lineNumber: 112,
+                                                                    lineNumber: 135,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 107,
+                                                            lineNumber: 126,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 117,
+                                                            lineNumber: 144,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1337,19 +1535,19 @@ function Navigation() {
                                                                         className: "mr-2 h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/navigation.tsx",
-                                                                        lineNumber: 120,
+                                                                        lineNumber: 147,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     "Profile"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/navigation.tsx",
-                                                                lineNumber: 119,
+                                                                lineNumber: 146,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 118,
+                                                            lineNumber: 145,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1362,19 +1560,19 @@ function Navigation() {
                                                                         className: "mr-2 h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/navigation.tsx",
-                                                                        lineNumber: 126,
+                                                                        lineNumber: 153,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     "My Listings"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/navigation.tsx",
-                                                                lineNumber: 125,
+                                                                lineNumber: 152,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 124,
+                                                            lineNumber: 151,
                                                             columnNumber: 21
                                                         }, this),
                                                         currentUser.isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1387,24 +1585,24 @@ function Navigation() {
                                                                         className: "mr-2 h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/navigation.tsx",
-                                                                        lineNumber: 133,
+                                                                        lineNumber: 160,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     "Moderation"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/navigation.tsx",
-                                                                lineNumber: 132,
+                                                                lineNumber: 159,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 131,
+                                                            lineNumber: 158,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 138,
+                                                            lineNumber: 165,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -1415,26 +1613,26 @@ function Navigation() {
                                                                     className: "mr-2 h-4 w-4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/navigation.tsx",
-                                                                    lineNumber: 140,
+                                                                    lineNumber: 170,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 "Log out"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/navigation.tsx",
-                                                            lineNumber: 139,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/navigation.tsx",
-                                                    lineNumber: 103,
+                                                    lineNumber: 122,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/navigation.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1449,12 +1647,12 @@ function Navigation() {
                                                 children: "Sign In"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navigation.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 183,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/navigation.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 178,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1465,12 +1663,12 @@ function Navigation() {
                                                 children: "Get Started"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/navigation.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 189,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/navigation.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 185,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1483,35 +1681,35 @@ function Navigation() {
                                         className: "h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/navigation.tsx",
-                                        lineNumber: 169,
-                                        columnNumber: 33
+                                        lineNumber: 200,
+                                        columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                         className: "h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/navigation.tsx",
-                                        lineNumber: 169,
-                                        columnNumber: 61
+                                        lineNumber: 202,
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/navigation.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 194,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/navigation.tsx",
-                            lineNumber: 63,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/navigation.tsx",
-                    lineNumber: 36,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/navigation.tsx",
-                lineNumber: 35,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1528,14 +1726,14 @@ function Navigation() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/navigation.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 224,
                                         columnNumber: 31
                                     }, this),
                                     link.label
                                 ]
                             }, link.href, true, {
                                 fileName: "[project]/components/navigation.tsx",
-                                lineNumber: 179,
+                                lineNumber: 213,
                                 columnNumber: 15
                             }, this)),
                         currentUser && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1547,31 +1745,31 @@ function Navigation() {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/navigation.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 234,
                                     columnNumber: 17
                                 }, this),
                                 "Sell Item"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/navigation.tsx",
-                            lineNumber: 193,
+                            lineNumber: 229,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/navigation.tsx",
-                    lineNumber: 177,
+                    lineNumber: 211,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/navigation.tsx",
-                lineNumber: 176,
+                lineNumber: 210,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/navigation.tsx",
-        lineNumber: 34,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
@@ -2230,17 +2428,17 @@ function ReviewForm({ itemId, onSuccess }) {
                     children: "You have already reviewed this item."
                 }, void 0, false, {
                     fileName: "[project]/components/review-form.tsx",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/review-form.tsx",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/review-form.tsx",
-            lineNumber: 32,
+            lineNumber: 34,
             columnNumber: 7
         }, this);
     }
@@ -2260,7 +2458,7 @@ function ReviewForm({ itemId, onSuccess }) {
         onSuccess?.();
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-        className: "border-border bg-card",
+        className: "border-border border-4 border-foreground rounded-none bg-card",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -2268,12 +2466,12 @@ function ReviewForm({ itemId, onSuccess }) {
                     children: "Write a Review"
                 }, void 0, false, {
                     fileName: "[project]/components/review-form.tsx",
-                    lineNumber: 62,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/review-form.tsx",
-                lineNumber: 61,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2288,7 +2486,7 @@ function ReviewForm({ itemId, onSuccess }) {
                                     children: "Your Rating"
                                 }, void 0, false, {
                                     fileName: "[project]/components/review-form.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2305,23 +2503,23 @@ function ReviewForm({ itemId, onSuccess }) {
                                                 className: `h-6 w-6 transition-colors ${(hoverRating || rating) > i ? "fill-primary text-primary" : "text-muted-foreground"}`
                                             }, void 0, false, {
                                                 fileName: "[project]/components/review-form.tsx",
-                                                lineNumber: 78,
+                                                lineNumber: 82,
                                                 columnNumber: 19
                                             }, this)
                                         }, i, false, {
                                             fileName: "[project]/components/review-form.tsx",
-                                            lineNumber: 70,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/review-form.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/review-form.tsx",
-                            lineNumber: 66,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2333,12 +2531,12 @@ function ReviewForm({ itemId, onSuccess }) {
                                 className: "bg-input"
                             }, void 0, false, {
                                 fileName: "[project]/components/review-form.tsx",
-                                lineNumber: 89,
+                                lineNumber: 95,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/review-form.tsx",
-                            lineNumber: 88,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2348,24 +2546,24 @@ function ReviewForm({ itemId, onSuccess }) {
                             children: isSubmitting ? "Submitting..." : "Submit Review"
                         }, void 0, false, {
                             fileName: "[project]/components/review-form.tsx",
-                            lineNumber: 98,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/review-form.tsx",
-                    lineNumber: 65,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/review-form.tsx",
-                lineNumber: 64,
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/review-form.tsx",
-        lineNumber: 60,
+        lineNumber: 64,
         columnNumber: 5
     }, this);
 }
@@ -2452,7 +2650,7 @@ function ItemDetailPage({ params }) {
                                 children: "Removed or doesn't exist"
                             }, void 0, false, {
                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                lineNumber: 54,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2463,12 +2661,12 @@ function ItemDetailPage({ params }) {
                                     children: "Browse Listings"
                                 }, void 0, false, {
                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                lineNumber: 57,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -2484,7 +2682,7 @@ function ItemDetailPage({ params }) {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                     fileName: "[project]/app/item/[id]/page.tsx",
-                    lineNumber: 65,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             ]
@@ -2505,7 +2703,7 @@ function ItemDetailPage({ params }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                 fileName: "[project]/app/item/[id]/page.tsx",
-                lineNumber: 80,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -2524,24 +2722,24 @@ function ItemDetailPage({ params }) {
                                         className: "mr-2 h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this),
                                     "Back"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                lineNumber: 84,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/item/[id]/page.tsx",
-                            lineNumber: 83,
+                            lineNumber: 87,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/item/[id]/page.tsx",
-                        lineNumber: 82,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2563,7 +2761,7 @@ function ItemDetailPage({ params }) {
                                                         className: "object-cover"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 99,
+                                                        lineNumber: 103,
                                                         columnNumber: 17
                                                     }, this),
                                                     item.images.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2575,12 +2773,12 @@ function ItemDetailPage({ params }) {
                                                                     className: "h-5 w-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                    lineNumber: 111,
+                                                                    lineNumber: 115,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 107,
+                                                                lineNumber: 111,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2590,12 +2788,12 @@ function ItemDetailPage({ params }) {
                                                                     className: "h-5 w-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                    lineNumber: 117,
+                                                                    lineNumber: 121,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 113,
+                                                                lineNumber: 117,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2605,12 +2803,12 @@ function ItemDetailPage({ params }) {
                                                                         className: `h-3 w-3 border-2 border-foreground transition-colors ${index === currentImageIndex ? "bg-primary" : "bg-background"}`
                                                                     }, index, false, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 121,
+                                                                        lineNumber: 125,
                                                                         columnNumber: 25
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 119,
+                                                                lineNumber: 123,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
@@ -2618,7 +2816,7 @@ function ItemDetailPage({ params }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 102,
                                                 columnNumber: 15
                                             }, this),
                                             item.images.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2633,23 +2831,23 @@ function ItemDetailPage({ params }) {
                                                             className: "object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 152,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, index, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 136,
+                                                        lineNumber: 143,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 141,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 101,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2666,7 +2864,7 @@ function ItemDetailPage({ params }) {
                                                                 children: item.condition.replace("-", " ")
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 158,
+                                                                lineNumber: 167,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2674,13 +2872,13 @@ function ItemDetailPage({ params }) {
                                                                 children: item.category
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 163,
+                                                                lineNumber: 174,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 157,
+                                                        lineNumber: 166,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2688,7 +2886,7 @@ function ItemDetailPage({ params }) {
                                                         children: item.brand
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 178,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -2696,7 +2894,7 @@ function ItemDetailPage({ params }) {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 170,
+                                                        lineNumber: 181,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2707,13 +2905,13 @@ function ItemDetailPage({ params }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 184,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 165,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2724,7 +2922,7 @@ function ItemDetailPage({ params }) {
                                                         children: "Description"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 179,
+                                                        lineNumber: 190,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2732,13 +2930,13 @@ function ItemDetailPage({ params }) {
                                                         children: item.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 180,
+                                                        lineNumber: 193,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 178,
+                                                lineNumber: 189,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2749,7 +2947,7 @@ function ItemDetailPage({ params }) {
                                                         children: "Specifications"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 186,
+                                                        lineNumber: 199,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2762,7 +2960,7 @@ function ItemDetailPage({ params }) {
                                                                         children: key
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 190,
+                                                                        lineNumber: 208,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2770,24 +2968,24 @@ function ItemDetailPage({ params }) {
                                                                         children: value
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 193,
+                                                                        lineNumber: 211,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, key, true, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 189,
+                                                                lineNumber: 204,
                                                                 columnNumber: 21
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 202,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 185,
+                                                lineNumber: 198,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2806,7 +3004,7 @@ function ItemDetailPage({ params }) {
                                                                                 src: seller?.avatar || "/placeholder.svg"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                lineNumber: 203,
+                                                                                lineNumber: 223,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
@@ -2814,13 +3012,13 @@ function ItemDetailPage({ params }) {
                                                                                 children: seller?.username[0] || "S"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                lineNumber: 204,
+                                                                                lineNumber: 224,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 202,
+                                                                        lineNumber: 222,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2833,20 +3031,20 @@ function ItemDetailPage({ params }) {
                                                                                         children: seller?.username
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                        lineNumber: 210,
+                                                                                        lineNumber: 230,
                                                                                         columnNumber: 25
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
                                                                                         className: "h-5 w-5 text-green-500"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                        lineNumber: 213,
+                                                                                        lineNumber: 233,
                                                                                         columnNumber: 25
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                lineNumber: 209,
+                                                                                lineNumber: 229,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2856,21 +3054,21 @@ function ItemDetailPage({ params }) {
                                                                                         className: "h-4 w-4 fill-primary text-primary"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                        lineNumber: 216,
+                                                                                        lineNumber: 236,
                                                                                         columnNumber: 25
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: seller?.rating || 0
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                        lineNumber: 217,
+                                                                                        lineNumber: 237,
                                                                                         columnNumber: 25
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         children: "•"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                        lineNumber: 218,
+                                                                                        lineNumber: 238,
                                                                                         columnNumber: 25
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2880,25 +3078,25 @@ function ItemDetailPage({ params }) {
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                        lineNumber: 219,
+                                                                                        lineNumber: 239,
                                                                                         columnNumber: 25
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                lineNumber: 215,
+                                                                                lineNumber: 235,
                                                                                 columnNumber: 23
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 208,
+                                                                        lineNumber: 228,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 201,
+                                                                lineNumber: 221,
                                                                 columnNumber: 19
                                                             }, this),
                                                             currentUser && currentUser.id !== item.sellerId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2911,25 +3109,25 @@ function ItemDetailPage({ params }) {
                                                                             className: "mr-2 h-4 w-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                            lineNumber: 229,
+                                                                            lineNumber: 249,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         "Message"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                    lineNumber: 228,
+                                                                    lineNumber: 248,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 224,
+                                                                lineNumber: 244,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 220,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2942,14 +3140,14 @@ function ItemDetailPage({ params }) {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 237,
+                                                                        lineNumber: 257,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     seller?.location || "Location not specified"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 236,
+                                                                lineNumber: 256,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2959,7 +3157,7 @@ function ItemDetailPage({ params }) {
                                                                         className: "h-4 w-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                        lineNumber: 241,
+                                                                        lineNumber: 261,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     "Listed ",
@@ -2967,19 +3165,19 @@ function ItemDetailPage({ params }) {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 240,
+                                                                lineNumber: 260,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 255,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 199,
+                                                lineNumber: 219,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2989,7 +3187,7 @@ function ItemDetailPage({ params }) {
                                                         className: "h-10 w-10 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 248,
+                                                        lineNumber: 268,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2999,7 +3197,7 @@ function ItemDetailPage({ params }) {
                                                                 children: "Buyer Protection"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 250,
+                                                                lineNumber: 270,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3007,31 +3205,31 @@ function ItemDetailPage({ params }) {
                                                                 children: "All transactions protected"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                                lineNumber: 251,
+                                                                lineNumber: 273,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 249,
+                                                        lineNumber: 269,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 247,
+                                                lineNumber: 267,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 164,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                lineNumber: 96,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -3046,12 +3244,12 @@ function ItemDetailPage({ params }) {
                                                 onSuccess: ()=>setReviewKey((k)=>k + 1)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 263,
+                                                lineNumber: 285,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                            lineNumber: 262,
+                                            lineNumber: 284,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3070,12 +3268,12 @@ function ItemDetailPage({ params }) {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                            lineNumber: 270,
+                                                            lineNumber: 304,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 269,
+                                                        lineNumber: 303,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3095,7 +3293,7 @@ function ItemDetailPage({ params }) {
                                                                                             src: review.avatar || "/placeholder.svg"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                            lineNumber: 284,
+                                                                                            lineNumber: 318,
                                                                                             columnNumber: 33
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
@@ -3103,13 +3301,13 @@ function ItemDetailPage({ params }) {
                                                                                             children: review.username[0]
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                            lineNumber: 285,
+                                                                                            lineNumber: 321,
                                                                                             columnNumber: 33
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                    lineNumber: 283,
+                                                                                    lineNumber: 317,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3119,7 +3317,7 @@ function ItemDetailPage({ params }) {
                                                                                             children: review.username
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                            lineNumber: 290,
+                                                                                            lineNumber: 326,
                                                                                             columnNumber: 33
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3131,7 +3329,7 @@ function ItemDetailPage({ params }) {
                                                                                                         className: `h-4 w-4 ${i < review.rating ? "fill-primary text-primary" : "text-muted-foreground"}`
                                                                                                     }, i, false, {
                                                                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                                        lineNumber: 295,
+                                                                                                        lineNumber: 331,
                                                                                                         columnNumber: 37
                                                                                                     }, this)),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3139,25 +3337,25 @@ function ItemDetailPage({ params }) {
                                                                                                     children: review.createdAt
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                                    lineNumber: 302,
+                                                                                                    lineNumber: 340,
                                                                                                     columnNumber: 35
                                                                                                 }, this)
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                            lineNumber: 293,
+                                                                                            lineNumber: 329,
                                                                                             columnNumber: 33
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                                    lineNumber: 289,
+                                                                                    lineNumber: 325,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                            lineNumber: 282,
+                                                                            lineNumber: 316,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3165,75 +3363,75 @@ function ItemDetailPage({ params }) {
                                                                             children: review.comment
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                                            lineNumber: 308,
+                                                                            lineNumber: 346,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, review.id, true, {
                                                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                                                    lineNumber: 278,
+                                                                    lineNumber: 312,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                            lineNumber: 276,
+                                                            lineNumber: 310,
                                                             columnNumber: 23
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "py-8 text-center font-mono text-sm font-bold uppercase tracking-wider text-muted-foreground",
                                                             children: "No reviews yet"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                                            lineNumber: 315,
+                                                            lineNumber: 353,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/item/[id]/page.tsx",
-                                                        lineNumber: 274,
+                                                        lineNumber: 308,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, reviewKey, true, {
                                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                                lineNumber: 268,
+                                                lineNumber: 299,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/item/[id]/page.tsx",
-                                            lineNumber: 267,
+                                            lineNumber: 292,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/item/[id]/page.tsx",
-                                    lineNumber: 260,
+                                    lineNumber: 282,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/item/[id]/page.tsx",
-                                lineNumber: 259,
+                                lineNumber: 281,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/item/[id]/page.tsx",
-                        lineNumber: 95,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/item/[id]/page.tsx",
-                lineNumber: 81,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/app/item/[id]/page.tsx",
-                lineNumber: 326,
+                lineNumber: 364,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/item/[id]/page.tsx",
-        lineNumber: 79,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }

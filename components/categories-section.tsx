@@ -1,7 +1,12 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { PocketKnife as Knife, Watch, ArrowRight, Sparkles } from "lucide-react"
+import Link from "next/link";
+import {
+  PocketKnife as Knife,
+  Watch,
+  ArrowRight,
+  Sparkles,
+} from "lucide-react";
 
 export function CategoriesSection() {
   return (
@@ -15,13 +20,15 @@ export function CategoriesSection() {
         <div className="mb-20 text-center">
           <div className="mb-6 inline-flex items-center gap-3 border-4 border-foreground bg-background px-6 py-3">
             <Sparkles className="h-6 w-6 text-primary" />
-            <span className="text-sm font-black uppercase tracking-[0.3em]">CATEGORIES</span>
+            <span className="text-sm font-black uppercase tracking-[0.3em]">
+              КАТЕГОРІЇ
+            </span>
           </div>
 
           <h2 className="font-black uppercase leading-none tracking-tighter">
-            <span className="block text-5xl sm:text-7xl">SHOP BY</span>
+            <span className="block text-5xl sm:text-7xl">КУПУЙТЕ ЗА</span>
             <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-5xl text-transparent sm:text-7xl">
-              CATEGORY
+              КАТЕГОРІЄЮ
             </span>
           </h2>
         </div>
@@ -44,16 +51,21 @@ export function CategoriesSection() {
 
                 {/* Content */}
                 <div className="mb-6 border-l-4 border-primary pl-6">
-                  <h3 className="mb-3 text-5xl font-black uppercase tracking-tighter">KNIVES</h3>
+                  <h3 className="mb-3 text-5xl font-black uppercase tracking-tighter">
+                    НОЖІ
+                  </h3>
                   <p className="text-base font-bold leading-relaxed text-muted-foreground">
-                    From everyday carry to collector's pieces. Japanese craftsmanship, tactical folders, custom builds.
+                    Від повсякденного носіння до колекційних екземплярів.
+                    Тактичні складані ножі, індивідуальні збірки.
                   </p>
                 </div>
 
                 {/* CTA */}
                 <div className="flex items-center gap-3 border-t-2 border-dashed border-foreground/20 pt-6">
                   <div className="h-2 w-2 bg-primary"></div>
-                  <span className="text-lg font-black uppercase tracking-wider text-primary">Browse</span>
+                  <span className="text-lg font-black uppercase tracking-wider text-primary">
+                    ПЕРЕГЛЯНУТИ
+                  </span>
                   <ArrowRight className="h-6 w-6 text-primary transition-transform group-hover:translate-x-3" />
                 </div>
               </div>
@@ -76,16 +88,21 @@ export function CategoriesSection() {
 
                 {/* Content */}
                 <div className="mb-6 border-l-4 border-accent pl-6">
-                  <h3 className="mb-3 text-5xl font-black uppercase tracking-tighter">WATCHES</h3>
+                  <h3 className="mb-3 text-5xl font-black uppercase tracking-tighter">
+                    ГОДИННИКИ
+                  </h3>
                   <p className="text-base font-bold leading-relaxed text-muted-foreground">
-                    Luxury timepieces from renowned maisons. Dive watches, dress watches, limited editions.
+                    Розкішні годинники від відомих будинків моди. Дайверські
+                    годинники, класичні годинники, обмежені серії.
                   </p>
                 </div>
 
                 {/* CTA */}
                 <div className="flex items-center gap-3 border-t-2 border-dashed border-foreground/20 pt-6">
                   <div className="h-2 w-2 bg-accent"></div>
-                  <span className="text-lg font-black uppercase tracking-wider text-accent">Browse</span>
+                  <span className="text-lg font-black uppercase tracking-wider text-accent">
+                    ПЕРЕГЛЯНУТИ
+                  </span>
                   <ArrowRight className="h-6 w-6 text-accent transition-transform group-hover:translate-x-3" />
                 </div>
               </div>
@@ -94,5 +111,5 @@ export function CategoriesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

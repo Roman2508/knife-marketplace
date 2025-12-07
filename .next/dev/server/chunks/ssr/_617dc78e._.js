@@ -244,7 +244,7 @@ const mockItems = [
         sellerAvatar: "/bearded-man-avatar.png",
         condition: "like-new",
         brand: "Microtech",
-        status: "pending",
+        status: "approved",
         createdAt: "2024-01-20",
         specs: {
             "Blade Length": "3.35 inches",
@@ -257,6 +257,204 @@ const mockItems = [
     {
         id: "item-8",
         title: "Grand Seiko SBGA413 Spring Drive",
+        description: "Stunning snowflake dial. Full kit with warranty card dated 2023.",
+        price: 5800,
+        category: "watch",
+        images: [
+            "/grand-seiko-spring-drive-snowflake-dial-watch.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Grand Seiko",
+        status: "approved",
+        createdAt: "2024-01-18",
+        specs: {
+            "Case Diameter": "40mm",
+            Movement: "9R65 Spring Drive",
+            "Water Resistance": "100m",
+            Crystal: "Sapphire",
+            "Power Reserve": "72 hours"
+        }
+    },
+    {
+        id: "item-9",
+        title: "Benchmade Bugout 535BK-3",
+        description: "Lightweight everyday carry knife with CPM-S30V blade steel. Perfect for outdoor enthusiasts. Minimal signs of use, blade is factory sharp.",
+        price: 1451,
+        category: "knife",
+        images: [
+            "/benchmade-bugout-folding-knife-black.jpg",
+            "/folding-knife-blade-detail.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "like-new",
+        brand: "Benchmade",
+        status: "approved",
+        createdAt: "2024-01-15",
+        specs: {
+            "Blade Length": "3.24 inches",
+            "Blade Steel": "CPM-S30V",
+            "Handle Material": "CF-Elite",
+            Weight: "1.85 oz",
+            "Lock Type": "AXIS Lock"
+        }
+    },
+    {
+        id: "item-10",
+        title: "Omega Seamaster Planet Ocean 700M",
+        description: "Professional dive watch in excellent condition. Full box and papers included. Recently serviced by Omega certified technician.",
+        price: 4850,
+        category: "watch",
+        images: [
+            "/omega-seamaster-planet-ocean-dive-watch.jpg",
+            "/luxury-watch-caseback-omega.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Omega",
+        status: "approved",
+        createdAt: "2024-01-10",
+        specs: {
+            "Case Diameter": "43.5mm",
+            Movement: "Co-Axial 8900",
+            "Water Resistance": "600m",
+            Crystal: "Sapphire",
+            "Power Reserve": "60 hours"
+        }
+    },
+    {
+        id: "item-11",
+        title: "Chris Reeve Sebenza 41 Large",
+        description: "The legendary Sebenza 31. This is the large version with S45VN blade. Pristine condition, carried a handful of times.",
+        price: 425,
+        category: "knife",
+        images: [
+            "/chris-reeve-sebenza-folding-knife-titanium.jpg",
+            "/premium-folding-knife-open-blade.jpg"
+        ],
+        sellerId: "user-3",
+        sellerName: "EdgeMaster",
+        sellerAvatar: "/man-with-glasses-avatar.png",
+        condition: "like-new",
+        brand: "Chris Reeve Knives",
+        status: "approved",
+        createdAt: "2024-01-08",
+        specs: {
+            "Blade Length": "3.625 inches",
+            "Blade Steel": "S45VN",
+            "Handle Material": "Titanium",
+            Weight: "4.7 oz",
+            "Lock Type": "Frame Lock"
+        }
+    },
+    {
+        id: "item-12",
+        title: "Rolex Submariner Date 116610LN",
+        description: "2023 model with remaining warranty. Worn sparingly, in mint condition. All original links, box, and papers.",
+        price: 12500,
+        category: "watch",
+        images: [
+            "/rolex-submariner-black-dial-steel-watch.jpg",
+            "/rolex-watch-bracelet-clasp-detail.jpg"
+        ],
+        sellerId: "user-2",
+        sellerName: "TimeKeeper",
+        sellerAvatar: "/professional-woman-avatar.png",
+        condition: "like-new",
+        brand: "Rolex",
+        status: "approved",
+        createdAt: "2024-01-05",
+        specs: {
+            "Case Diameter": "41mm",
+            Movement: "Caliber 3235",
+            "Water Resistance": "300m",
+            Crystal: "Sapphire",
+            "Power Reserve": "70 hours"
+        }
+    },
+    {
+        id: "item-13",
+        title: "Spyderco Para Military 12",
+        description: "Classic EDC knife in S45VN. Well broken in action, smooth as butter. Some light scratches on the clip.",
+        price: 125,
+        category: "knife",
+        images: [
+            "/spyderco-paramilitary-2-folding-knife.jpg",
+            "/tactical-folding-knife-blade.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "good",
+        brand: "Spyderco",
+        status: "approved",
+        createdAt: "2024-01-03",
+        specs: {
+            "Blade Length": "3.42 inches",
+            "Blade Steel": "S45VN",
+            "Handle Material": "G-10",
+            Weight: "3.75 oz",
+            "Lock Type": "Compression Lock"
+        }
+    },
+    {
+        id: "item-14",
+        title: "Tudor Black Bay 48",
+        description: "Beautiful vintage-inspired diver. Blue dial version. Excellent condition with Tudor fabric strap.",
+        price: 3200,
+        category: "watch",
+        images: [
+            "/tudor-black-bay-58-blue-dial-watch.jpg",
+            "/dive-watch-nato-strap-detail.jpg"
+        ],
+        sellerId: "user-3",
+        sellerName: "EdgeMaster",
+        sellerAvatar: "/man-with-glasses-avatar.png",
+        condition: "like-new",
+        brand: "Tudor",
+        status: "approved",
+        createdAt: "2024-01-01",
+        specs: {
+            "Case Diameter": "39mm",
+            Movement: "MT5402",
+            "Water Resistance": "200m",
+            Crystal: "Sapphire",
+            "Power Reserve": "70 hours"
+        }
+    },
+    {
+        id: "item-15",
+        title: "Microtech Ultratech 2",
+        description: "OTF automatic knife. Like new in box. Fires hard with no blade play.",
+        price: 280,
+        category: "knife",
+        images: [
+            "/microtech-ultratech-otf-automatic-knife.jpg"
+        ],
+        sellerId: "user-1",
+        sellerName: "BladeCollector",
+        sellerAvatar: "/bearded-man-avatar.png",
+        condition: "like-new",
+        brand: "Microtech",
+        status: "pending",
+        createdAt: "2024-01-20",
+        specs: {
+            "Blade Length": "3.35 inches",
+            "Blade Steel": "M390",
+            "Handle Material": "Aluminum",
+            Weight: "3.4 oz",
+            "Lock Type": "OTF Slide Lock"
+        }
+    },
+    {
+        id: "item-16",
+        title: "Grand Seiko SBGA413 Spring Drive 2",
         description: "Stunning snowflake dial. Full kit with warranty card dated 2023.",
         price: 5800,
         category: "watch",
@@ -613,32 +811,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 ;
 ;
 ;
-const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
     variants: {
         variant: {
-            default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-            destructive: 'bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
-            outline: 'border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50',
-            secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-            ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-            link: 'text-primary underline-offset-4 hover:underline'
+            default: "bg-primary text-primary-foreground hover:bg-primary/90",
+            destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+            outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 dark:hover:text-foreground",
+            secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+            ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 dark:hover:text-foreground",
+            link: "text-primary underline-offset-4 hover:underline"
         },
         size: {
-            default: 'h-9 px-4 py-2 has-[>svg]:px-3',
-            sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
-            lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
-            icon: 'size-9',
-            'icon-sm': 'size-8',
-            'icon-lg': 'size-10'
+            default: "h-9 px-4 py-2 has-[>svg]:px-3",
+            sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+            lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+            icon: "size-9",
+            "icon-sm": "size-8",
+            "icon-lg": "size-10"
         }
     },
     defaultVariants: {
-        variant: 'default',
-        size: 'default'
+        variant: "default",
+        size: "default"
     }
 });
 function Button({ className, variant, size, asChild = false, ...props }) {
-    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"] : 'button';
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"] : "button";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
         "data-slot": "button",
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(buttonVariants({
@@ -2118,11 +2316,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/badge.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/avatar.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pocket$2d$knife$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PocketKnife$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/pocket-knife.js [app-ssr] (ecmascript) <export default as PocketKnife>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$watch$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Watch$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/watch.js [app-ssr] (ecmascript) <export default as Watch>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/badge.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/avatar.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -2155,7 +2353,7 @@ function ItemCard({ item }) {
                             className: "object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2"
                         }, void 0, false, {
                             fileName: "[project]/components/item-card.tsx",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2165,12 +2363,12 @@ function ItemCard({ item }) {
                                 children: item.condition.replace("-", " ")
                             }, void 0, false, {
                                 fileName: "[project]/components/item-card.tsx",
-                                lineNumber: 39,
+                                lineNumber: 40,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/item-card.tsx",
-                            lineNumber: 38,
+                            lineNumber: 39,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2181,12 +2379,12 @@ function ItemCard({ item }) {
                                     className: "h-6 w-6 text-background"
                                 }, void 0, false, {
                                     fileName: "[project]/components/item-card.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 53,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/item-card.tsx",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "border-4 border-foreground bg-accent p-3",
@@ -2194,23 +2392,23 @@ function ItemCard({ item }) {
                                     className: "h-6 w-6 text-background"
                                 }, void 0, false, {
                                     fileName: "[project]/components/item-card.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 57,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/item-card.tsx",
-                                lineNumber: 55,
+                                lineNumber: 56,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/item-card.tsx",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/item-card.tsx",
-                    lineNumber: 26,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2226,12 +2424,12 @@ function ItemCard({ item }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/item-card.tsx",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/item-card.tsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2242,7 +2440,7 @@ function ItemCard({ item }) {
                                     children: item.brand
                                 }, void 0, false, {
                                     fileName: "[project]/components/item-card.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2250,13 +2448,13 @@ function ItemCard({ item }) {
                                     children: item.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/item-card.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/item-card.tsx",
-                            lineNumber: 71,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2269,7 +2467,7 @@ function ItemCard({ item }) {
                                             src: item.sellerAvatar || "/placeholder.svg"
                                         }, void 0, false, {
                                             fileName: "[project]/components/item-card.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
@@ -2277,13 +2475,13 @@ function ItemCard({ item }) {
                                             children: item.sellerName[0]
                                         }, void 0, false, {
                                             fileName: "[project]/components/item-card.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/item-card.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2294,7 +2492,7 @@ function ItemCard({ item }) {
                                             children: item.sellerName
                                         }, void 0, false, {
                                             fileName: "[project]/components/item-card.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2304,7 +2502,7 @@ function ItemCard({ item }) {
                                                     className: "h-3 w-3 fill-primary text-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/item-card.tsx",
-                                                    lineNumber: 93,
+                                                    lineNumber: 94,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2312,49 +2510,49 @@ function ItemCard({ item }) {
                                                     children: "4.9"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/item-card.tsx",
-                                                    lineNumber: 94,
+                                                    lineNumber: 95,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/item-card.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 93,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/item-card.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 89,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/item-card.tsx",
-                            lineNumber: 81,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/item-card.tsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute bottom-0 left-0 h-8 w-8 border-r-4 border-t-4 border-accent"
                 }, void 0, false, {
                     fileName: "[project]/components/item-card.tsx",
-                    lineNumber: 103,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/item-card.tsx",
-            lineNumber: 24,
+            lineNumber: 25,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/item-card.tsx",
-        lineNumber: 23,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }

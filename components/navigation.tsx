@@ -1,34 +1,47 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { useState } from "react"
-import { cn } from "@/lib/utils"
-import { useAppStore } from "@/lib/store"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import { useAppStore } from "@/lib/store";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Menu, X, Watch, PocketKnife as Knife, MessageSquare, User, LogOut, Shield, Plus } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
+} from "@/components/ui/dropdown-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  Menu,
+  X,
+  Watch,
+  PocketKnife as Knife,
+  MessageSquare,
+  User,
+  LogOut,
+  Shield,
+  Plus,
+} from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/browse", label: "Browse", icon: null },
   { href: "/browse?category=knife", label: "Knives", icon: Knife },
   { href: "/browse?category=watch", label: "Watches", icon: Watch },
-]
+];
 
 export function Navigation() {
-  const pathname = usePathname()
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { currentUser, logout, conversations } = useAppStore()
+  const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { currentUser, logout, conversations } = useAppStore();
 
-  const unreadMessages = conversations.reduce((acc, c) => acc + c.unreadCount, 0)
+  const unreadMessages = conversations.reduce(
+    (acc, c) => acc + c.unreadCount,
+    0
+  );
 
   return (
     <header className="fixed top-4 left-4 right-4 z-50">
@@ -49,9 +62,10 @@ export function Navigation() {
                 href={link.href}
                 className={cn(
                   "flex items-center gap-2 border-2 border-foreground px-5 py-2 text-xs font-black uppercase tracking-wider transition-all hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]",
-                  pathname === link.href || pathname.startsWith(link.href.split("?")[0])
+                  pathname === link.href ||
+                    pathname.startsWith(link.href.split("?")[0])
                     ? "bg-primary text-primary-foreground"
-                    : "bg-background text-foreground",
+                    : "bg-background text-foreground"
                 )}
               >
                 {link.icon && <link.icon className="h-4 w-4" />}
@@ -60,7 +74,7 @@ export function Navigation() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <ThemeToggle />
 
             {currentUser ? (
@@ -68,17 +82,17 @@ export function Navigation() {
                 <Button
                   asChild
                   variant="ghost"
-                  className="hidden border-2 border-foreground bg-background px-4 py-2 text-xs font-black uppercase tracking-wider shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] sm:flex"
+                  className="hidden border-2 rounded-none border-foreground bg-background px-4 py-2 text-xs font-black uppercase tracking-wider shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] sm:flex"
                 >
                   <Link href="/sell">
                     <Plus className="mr-2 h-4 w-4" />
-                    Sell
+                    ПРОДАТИ
                   </Link>
                 </Button>
 
                 <Link
                   href="/messages"
-                  className="relative flex h-10 w-10 items-center justify-center border-2 border-foreground bg-background shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-accent hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]"
+                  className="relative flex h-9 w-9 items-center justify-center border-2 border-foreground bg-background shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-accent hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]"
                 >
                   <MessageSquare className="h-4 w-4" />
                   {unreadMessages > 0 && (
@@ -92,11 +106,16 @@ export function Navigation() {
                   <DropdownMenuTrigger asChild>
                     <Button
                       variant="ghost"
-                      className="h-10 w-10 border-2 border-foreground bg-background p-0 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]"
+                      className="h-9 w-9 rounded-none border-2 border-foreground bg-background p-0 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:bg-primary hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)]"
                     >
-                      <Avatar className="h-8 w-8">
-                        <AvatarImage src={currentUser.avatar || "/placeholder.svg"} alt={currentUser.username} />
-                        <AvatarFallback className="font-black uppercase">{currentUser.username[0]}</AvatarFallback>
+                      <Avatar className="h-8 w-8 rounded-none">
+                        <AvatarImage
+                          src={currentUser.avatar || "/placeholder.svg"}
+                          alt={currentUser.username}
+                        />
+                        <AvatarFallback className="font-black uppercase">
+                          {currentUser.username[0]}
+                        </AvatarFallback>
                       </Avatar>
                     </Button>
                   </DropdownMenuTrigger>
@@ -106,12 +125,20 @@ export function Navigation() {
                   >
                     <div className="flex items-center gap-2 p-2">
                       <Avatar className="h-10 w-10">
-                        <AvatarImage src={currentUser.avatar || "/placeholder.svg"} />
-                        <AvatarFallback>{currentUser.username[0]}</AvatarFallback>
+                        <AvatarImage
+                          src={currentUser.avatar || "/placeholder.svg"}
+                        />
+                        <AvatarFallback>
+                          {currentUser.username[0]}
+                        </AvatarFallback>
                       </Avatar>
                       <div className="flex flex-col">
-                        <span className="text-sm font-medium">{currentUser.username}</span>
-                        <span className="text-xs text-muted-foreground">{currentUser.email}</span>
+                        <span className="text-sm font-medium">
+                          {currentUser.username}
+                        </span>
+                        <span className="text-xs text-muted-foreground">
+                          {currentUser.email}
+                        </span>
                       </div>
                     </div>
                     <DropdownMenuSeparator />
@@ -136,7 +163,10 @@ export function Navigation() {
                       </DropdownMenuItem>
                     )}
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem onClick={logout} className="cursor-pointer text-destructive">
+                    <DropdownMenuItem
+                      onClick={logout}
+                      className="cursor-pointer text-destructive"
+                    >
                       <LogOut className="mr-2 h-4 w-4" />
                       Log out
                     </DropdownMenuItem>
@@ -166,7 +196,11 @@ export function Navigation() {
               className="border-2 border-foreground bg-background p-2 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] md:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {mobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -182,7 +216,9 @@ export function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={cn(
                   "flex items-center gap-2 border-2 border-foreground px-4 py-3 text-sm font-black uppercase tracking-wider transition-all hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]",
-                  pathname === link.href ? "bg-primary text-primary-foreground" : "bg-background",
+                  pathname === link.href
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-background"
                 )}
               >
                 {link.icon && <link.icon className="h-4 w-4" />}
@@ -203,5 +239,5 @@ export function Navigation() {
         </div>
       )}
     </header>
-  )
+  );
 }

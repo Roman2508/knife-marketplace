@@ -1,93 +1,120 @@
-"use client"
+"use client";
 
-import { useState, useMemo, Suspense } from "react"
-import { useSearchParams } from "next/navigation"
-import Link from "next/link"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { ItemCard } from "@/components/item-card"
-import { useAppStore } from "@/lib/store"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Search, X, LayoutGrid, Rows3, ChevronLeft, ChevronRight, Star } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { useState, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { ItemCard } from "@/components/item-card";
+import { useAppStore } from "@/lib/store";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  Search,
+  X,
+  LayoutGrid,
+  Rows3,
+  ChevronLeft,
+  ChevronRight,
+  Star,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
 function BrowseContent() {
-  const searchParams = useSearchParams()
-  const categoryParam = searchParams.get("category") as "knife" | "watch" | null
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category") as
+    | "knife"
+    | "watch"
+    | null;
 
-  const { items, users } = useAppStore()
-  const [search, setSearch] = useState("")
-  const [category, setCategory] = useState<string>(categoryParam || "all")
-  const [condition, setCondition] = useState<string>("all")
-  const [sortBy, setSortBy] = useState<string>("newest")
-  const [viewMode, setViewMode] = useState<"cards" | "rows">("cards")
-  const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 9
+  const { items, users } = useAppStore();
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState<string>(categoryParam || "all");
+  const [condition, setCondition] = useState<string>("all");
+  const [sortBy, setSortBy] = useState<string>("newest");
+  const [viewMode, setViewMode] = useState<"cards" | "rows">("cards");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 3;
 
-  const approvedItems = items.filter((item) => item.status === "approved")
+  const approvedItems = items.filter((item) => item.status === "approved");
 
   const filteredItems = useMemo(() => {
-    let result = approvedItems
+    let result = approvedItems;
 
     if (search) {
-      const searchLower = search.toLowerCase()
+      const searchLower = search.toLowerCase();
       result = result.filter(
         (item) =>
           item.title.toLowerCase().includes(searchLower) ||
           item.brand.toLowerCase().includes(searchLower) ||
-          item.description.toLowerCase().includes(searchLower),
-      )
+          item.description.toLowerCase().includes(searchLower)
+      );
     }
 
     if (category !== "all") {
-      result = result.filter((item) => item.category === category)
+      result = result.filter((item) => item.category === category);
     }
 
     if (condition !== "all") {
-      result = result.filter((item) => item.condition === condition)
+      result = result.filter((item) => item.condition === condition);
     }
 
     switch (sortBy) {
       case "price-low":
-        result = [...result].sort((a, b) => a.price - b.price)
-        break
+        result = [...result].sort((a, b) => a.price - b.price);
+        break;
       case "price-high":
-        result = [...result].sort((a, b) => b.price - a.price)
-        break
+        result = [...result].sort((a, b) => b.price - a.price);
+        break;
       case "newest":
-        result = [...result].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-        break
+        result = [...result].sort(
+          (a, b) =>
+            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
+        break;
     }
 
-    return result
-  }, [approvedItems, search, category, condition, sortBy])
+    return result;
+  }, [approvedItems, search, category, condition, sortBy]);
 
-  const totalPages = Math.ceil(filteredItems.length / itemsPerPage)
-  const startIndex = (currentPage - 1) * itemsPerPage
-  const paginatedItems = filteredItems.slice(startIndex, startIndex + itemsPerPage)
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedItems = filteredItems.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   useMemo(() => {
-    setCurrentPage(1)
-  }, [search, category, condition, sortBy])
+    setCurrentPage(1);
+  }, [search, category, condition, sortBy]);
 
-  const activeFiltersCount = [category !== "all", condition !== "all"].filter(Boolean).length
+  const activeFiltersCount = [category !== "all", condition !== "all"].filter(
+    Boolean
+  ).length;
 
   const clearFilters = () => {
-    setCategory("all")
-    setCondition("all")
-    setSearch("")
-  }
+    setCategory("all");
+    setCondition("all");
+    setSearch("");
+  };
 
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
-      <main className="flex-1">
+      <main className="flex-1 mt-32 border-t-4 border-foreground">
         <div className="border-b-4 border-foreground bg-secondary">
           <div className="mx-auto max-w-7xl px-4 py-8">
-            <h1 className="font-mono text-4xl font-black uppercase tracking-tighter">Browse Listings</h1>
+            <h1 className="font-mono text-4xl font-black uppercase tracking-tighter">
+              Browse Listings
+            </h1>
             <p className="mt-2 font-mono text-sm font-bold uppercase tracking-wider text-muted-foreground">
               Discover knives & watches
             </p>
@@ -169,7 +196,7 @@ function BrowseContent() {
                   "border-4 border-foreground shadow-[4px_4px_0_0_rgb(var(--foreground))]",
                   viewMode === "cards"
                     ? "bg-primary text-primary-foreground"
-                    : "bg-background hover:bg-foreground hover:text-background",
+                    : "bg-background hover:bg-foreground hover:text-background"
                 )}
               >
                 <LayoutGrid className="h-5 w-5" />
@@ -182,7 +209,7 @@ function BrowseContent() {
                   "border-4 border-foreground shadow-[4px_4px_0_0_rgb(var(--foreground))]",
                   viewMode === "rows"
                     ? "bg-primary text-primary-foreground"
-                    : "bg-background hover:bg-foreground hover:text-background",
+                    : "bg-background hover:bg-foreground hover:text-background"
                 )}
               >
                 <Rows3 className="h-5 w-5" />
@@ -201,7 +228,7 @@ function BrowseContent() {
               ) : (
                 <div className="space-y-4">
                   {paginatedItems.map((item) => {
-                    const seller = users.find((u) => u.id === item.sellerId)
+                    const seller = users.find((u) => u.id === item.sellerId);
                     return (
                       <Link
                         key={item.id}
@@ -246,7 +273,9 @@ function BrowseContent() {
                           <div className="mt-auto flex flex-col gap-2 pt-4 sm:flex-row sm:items-center sm:justify-between">
                             <div className="flex items-center gap-3">
                               <Avatar className="h-10 w-10 border-2 border-foreground">
-                                <AvatarImage src={seller?.avatar || "/placeholder.svg"} />
+                                <AvatarImage
+                                  src={seller?.avatar || "/placeholder.svg"}
+                                />
                                 <AvatarFallback className="bg-primary font-black text-background">
                                   {seller?.username[0]}
                                 </AvatarFallback>
@@ -272,7 +301,7 @@ function BrowseContent() {
                           </div>
                         </div>
                       </Link>
-                    )
+                    );
                   })}
                 </div>
               )}
@@ -289,25 +318,29 @@ function BrowseContent() {
                   </Button>
 
                   <div className="flex gap-2">
-                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                      <Button
-                        key={page}
-                        onClick={() => setCurrentPage(page)}
-                        variant={currentPage === page ? "default" : "outline"}
-                        className={cn(
-                          "border-4 border-foreground font-mono font-black uppercase shadow-[4px_4px_0_0_rgb(var(--foreground))]",
-                          currentPage === page
-                            ? "bg-primary text-primary-foreground"
-                            : "bg-background hover:bg-foreground hover:text-background",
-                        )}
-                      >
-                        {page}
-                      </Button>
-                    ))}
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                      (page) => (
+                        <Button
+                          key={page}
+                          onClick={() => setCurrentPage(page)}
+                          variant={currentPage === page ? "default" : "outline"}
+                          className={cn(
+                            "border-4 border-foreground font-mono font-black uppercase shadow-[4px_4px_0_0_rgb(var(--foreground))]",
+                            currentPage === page
+                              ? "bg-primary text-primary-foreground"
+                              : "bg-background hover:bg-foreground hover:text-background"
+                          )}
+                        >
+                          {page}
+                        </Button>
+                      )
+                    )}
                   </div>
 
                   <Button
-                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                    onClick={() =>
+                      setCurrentPage((p) => Math.min(totalPages, p + 1))
+                    }
                     disabled={currentPage === totalPages}
                     variant="outline"
                     className="border-4 border-foreground font-mono font-black uppercase shadow-[4px_4px_0_0_rgb(var(--foreground))] disabled:opacity-50"
@@ -319,7 +352,9 @@ function BrowseContent() {
             </>
           ) : (
             <div className="border-4 border-foreground bg-card p-16 text-center shadow-brutal">
-              <p className="font-mono text-2xl font-black uppercase tracking-tighter">No Items Found</p>
+              <p className="font-mono text-2xl font-black uppercase tracking-tighter">
+                No Items Found
+              </p>
               <p className="mt-3 font-mono text-sm font-bold uppercase tracking-wider text-muted-foreground">
                 Try adjusting your filters
               </p>
@@ -335,13 +370,19 @@ function BrowseContent() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
 export default function BrowsePage() {
   return (
-    <Suspense fallback={<div className="flex min-h-screen items-center justify-center">Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className="flex min-h-screen items-center justify-center">
+          Loading...
+        </div>
+      }
+    >
       <BrowseContent />
     </Suspense>
-  )
+  );
 }

@@ -22,16 +22,16 @@ export function HeroSection() {
             <div className="space-y-4">
               <h1 className="font-black uppercase tracking-tighter leading-[0.85]">
                 <span className="block text-6xl sm:text-7xl lg:text-8xl">
-                  PREMIUM
+                  ПРЕМІУМ
                 </span>
-                <span className="block border-8 border-foreground bg-primary px-4 py-2 text-6xl text-primary-foreground shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] sm:text-7xl lg:text-8xl my-2">
-                  KNIVES
+                <span className="block border-8 border-foreground bg-primary px-4 py-2 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-primary-foreground shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] my-2">
+                  НОЖІ
                 </span>
                 <span className="block text-6xl sm:text-7xl lg:text-8xl">
                   &
                 </span>
-                <span className="block border-8 border-foreground bg-accent px-4 py-2 text-6xl shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] sm:text-7xl lg:text-8xl my-2">
-                  WATCHES
+                <span className="block border-8 border-foreground bg-accent px-4 py-2 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] my-2">
+                  ГОДИННИКИ
                 </span>
               </h1>
 
@@ -51,7 +51,7 @@ export function HeroSection() {
                 className="h-16 border-4 border-foreground bg-primary px-10 text-base font-black uppercase tracking-wider text-primary-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)]"
               >
                 <Link href="/browse">
-                  Explore Now
+                  ПЕРЕГЛЯНУТИ ПРОПОЗИЦІЇ
                   <ArrowRight className="ml-2 h-6 w-6" />
                 </Link>
               </Button>
@@ -61,7 +61,7 @@ export function HeroSection() {
                 size="lg"
                 className="h-16 border-4 !border-foreground bg-background px-10 text-base font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:text-foreground hover:-translate-x-1 hover:-translate-y-1 hover:bg-accent hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)]"
               >
-                <Link href="/register">Start Selling</Link>
+                <Link href="/register">ПОЧАТИ ПРОДАЖ</Link>
               </Button>
             </div>
 

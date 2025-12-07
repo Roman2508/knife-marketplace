@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Star, PocketKnife as Knife, Watch } from "lucide-react";
+
+import type { Item } from "@/lib/mock-data";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Star, PocketKnife as Knife, Watch } from "lucide-react";
-import type { Item } from "@/lib/mock-data";
 
 interface ItemCardProps {
   item: Item;
