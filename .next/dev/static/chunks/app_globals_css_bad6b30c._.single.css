@@ -815,10 +815,6 @@
     margin-top: calc(var(--spacing) * 12);
   }
 
-  .mt-14 {
-    margin-top: calc(var(--spacing) * 14);
-  }
-
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
@@ -829,14 +825,6 @@
 
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
-  }
-
-  .mt-36 {
-    margin-top: calc(var(--spacing) * 36);
-  }
-
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
   }
 
   .mt-auto {
@@ -3960,12 +3948,6 @@
   @media (hover: hover) {
     .hover\:text-sidebar-accent-foreground:hover {
       color: var(--sidebar-accent-foreground);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-white:hover {
-      color: var(--color-white);
     }
   }
 
