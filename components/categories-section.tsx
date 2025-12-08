@@ -89,11 +89,11 @@ export function CategoriesSection() {
                 {/* Content */}
                 <div className="mb-6 border-l-4 border-accent pl-6">
                   <h3 className="mb-3 text-5xl font-black uppercase tracking-tighter">
-                    ГОДИННИКИ
+                    Аксесуари
                   </h3>
                   <p className="text-base font-bold leading-relaxed text-muted-foreground">
-                    Розкішні годинники від відомих будинків моди. Дайверські
-                    годинники, класичні годинники, обмежені серії.
+                    Аксесуари для ножів: чохли, точила, багатофункціональні
+                    інструменти та інше.
                   </p>
                 </div>
 

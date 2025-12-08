@@ -1,8 +1,8 @@
-import { Footer } from '@/components/footer'
-import { Navigation } from '@/components/navigation'
-import { HeroSection } from '@/components/hero-section'
-import { FeaturedItems } from '@/components/featured-items'
-import { CategoriesSection } from '@/components/categories-section'
+import { Footer } from "@/components/footer";
+import { Navigation } from "@/components/navigation";
+import { HeroSection } from "@/components/hero-section";
+import { FeaturedItems } from "@/components/featured-items";
+import { CategoriesSection } from "@/components/categories-section";
 
 export default function HomePage() {
   return (
@@ -15,6 +15,8 @@ export default function HomePage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 /* https://www.embla-carousel.com/get-started/react/ */
+/* написати політику конфіденційності: https://freelancehunt.com/ua/freelancer/Sergiy_Law.html#reviews */
+/* https://www.iubenda.com/p/en/pricing/ */

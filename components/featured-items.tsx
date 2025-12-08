@@ -67,7 +67,7 @@ export function FeaturedItems() {
             className="group relative border-4 border-foreground bg-accent px-12 py-8 text-xl font-black uppercase tracking-wider text-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1"
           >
             <Link href="/browse">
-              ПЕРЕГЛЯНУТИ ВСІ ПРОПОЗИЦІЇ
+              ВСІ ПРОПОЗИЦІЇ
               <ArrowRight className="ml-3 h-6 w-6 transition-transform group-hover:translate-x-2" />
             </Link>
           </Button>
