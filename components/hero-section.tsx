@@ -80,6 +80,7 @@ export function HeroSection() {
               <div className="group relative aspect-[4/2.5] overflow-hidden border-4 border-foreground bg-card shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[18px_18px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[18px_18px_0px_0px_rgba(255,255,255,1)]">
                 <img
                   src="/luxury-knife-collection-display.jpg"
+                  // src="/spyderco-paramilitary-2-folding-knife.jpg"
                   alt="Featured knife"
                   className="h-full w-full object-cover"
                 />
@@ -90,7 +91,11 @@ export function HeroSection() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="group relative aspect-square overflow-hidden border-4 border-foreground bg-card shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)]">
-                  <img src="/luxury-watch-closeup.jpg" alt="Featured watch" className="h-full w-full object-cover" />
+                  <img
+                    src="/chris-reeve-sebenza-folding-knife-titanium.jpg"
+                    alt="Featured watch"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
 
                 <div className="group relative aspect-square overflow-hidden border-4 border-foreground bg-card shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)]">

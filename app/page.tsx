@@ -1,8 +1,8 @@
-import { Footer } from "@/components/footer"
-import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
-import { FeaturedItems } from "@/components/featured-items"
-import { CategoriesSection } from "@/components/categories-section"
+import { Footer } from '@/components/footer'
+import { Navigation } from '@/components/navigation'
+import { HeroSection } from '@/components/hero-section'
+import { FeaturedItems } from '@/components/featured-items'
+import { CategoriesSection } from '@/components/categories-section'
 
 export default function HomePage() {
   return (
@@ -17,3 +17,4 @@ export default function HomePage() {
     </div>
   )
 }
+/* https://www.embla-carousel.com/get-started/react/ */
