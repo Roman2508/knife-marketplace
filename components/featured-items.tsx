@@ -1,16 +1,14 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useAppStore } from "@/lib/store";
-import { ItemCard } from "@/components/item-card";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Zap } from "lucide-react";
+import Link from 'next/link'
+import { useAppStore } from '@/lib/store'
+import { ItemCard } from '@/components/item-card'
+import { Button } from '@/components/ui/button'
+import { ArrowRight, TrendingUp, Zap } from 'lucide-react'
 
 export function FeaturedItems() {
-  const { items } = useAppStore();
-  const featuredItems = items
-    .filter((item) => item.status === "approved")
-    .slice(0, 6);
+  const { items } = useAppStore()
+  const featuredItems = items.filter((item) => item.status === 'approved').slice(0, 6)
 
   return (
     <section className="relative overflow-hidden bg-background py-24">
@@ -26,15 +24,11 @@ export function FeaturedItems() {
               <TrendingUp className="h-8 w-8 text-background" />
             </div>
             <div className="h-1 w-32 bg-foreground"></div>
-            <span className="text-sm font-black uppercase tracking-[0.3em]">
-              В ТРЕНДІ
-            </span>
+            <span className="text-sm font-black uppercase tracking-[0.3em]">В ТРЕНДІ</span>
           </div>
 
           <h2 className="mb-4 font-black leading-none">
-            <span className="block uppercase tracking-tighter text-4xl sm:text-6xl lg:text-8xl">
-              РЕКОМЕНДОВАНІ
-            </span>
+            <span className="block uppercase tracking-tighter text-4xl sm:text-6xl lg:text-8xl">РЕКОМЕНДОВАНІ</span>
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text uppercase italic tracking-tighter text-transparent text-4xl sm:text-6xl lg:text-8xl">
               ПРОПОЗИЦІЇ
             </span>
@@ -53,11 +47,12 @@ export function FeaturedItems() {
           {featuredItems.map((item, index) => (
             <div
               key={item.id}
-              className={index === 0 ? "sm:col-span-2 lg:col-span-1" : ""}
-              style={{
-                transform:
-                  index % 2 === 0 ? "translateY(0)" : "translateY(2rem)",
-              }}
+              // className={index === 0 ? 'sm:col-span-2 lg:col-span-1' : ''}
+              style={
+                {
+                  // transform: index % 2 === 0 ? 'translateY(0)' : 'translateY(2rem)',
+                }
+              }
             >
               <ItemCard item={item} />
             </div>
@@ -79,5 +74,5 @@ export function FeaturedItems() {
         </div>
       </div>
     </section>
-  );
+  )
 }

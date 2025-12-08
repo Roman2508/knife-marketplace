@@ -1,5 +1,5 @@
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturedItems } from "@/components/featured-items"
 import { CategoriesSection } from "@/components/categories-section"

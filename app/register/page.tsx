@@ -1,49 +1,49 @@
-"use client"
+'use client'
 
-import type React from "react"
+import type React from 'react'
 
-import { useState } from "react"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Checkbox } from "@/components/ui/checkbox"
-import { useAppStore } from "@/lib/store"
-import { Eye, EyeOff, AlertCircle, Check } from "lucide-react"
+import { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Checkbox } from '@/components/ui/checkbox'
+import { useAppStore } from '@/lib/store'
+import { Eye, EyeOff, AlertCircle, Check } from 'lucide-react'
 
 export default function RegisterPage() {
   const router = useRouter()
   const { register } = useAppStore()
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [confirmPassword, setConfirmPassword] = useState("")
+  const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [agreeTerms, setAgreeTerms] = useState(false)
-  const [error, setError] = useState("")
+  const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
   const passwordRequirements = [
-    { met: password.length >= 8, text: "At least 8 characters" },
-    { met: /[A-Z]/.test(password), text: "One uppercase letter" },
-    { met: /[a-z]/.test(password), text: "One lowercase letter" },
-    { met: /[0-9]/.test(password), text: "One number" },
+    { met: password.length >= 8, text: 'At least 8 characters' },
+    { met: /[A-Z]/.test(password), text: 'One uppercase letter' },
+    { met: /[a-z]/.test(password), text: 'One lowercase letter' },
+    { met: /[0-9]/.test(password), text: 'One number' },
   ]
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setError("")
+    setError('')
 
     if (password !== confirmPassword) {
-      setError("Passwords do not match")
+      setError('Passwords do not match')
       return
     }
 
     if (!agreeTerms) {
-      setError("You must agree to the terms and conditions")
+      setError('You must agree to the terms and conditions')
       return
     }
 
@@ -52,9 +52,9 @@ export default function RegisterPage() {
 
     const success = register(username, email, password)
     if (success) {
-      router.push("/")
+      router.push('/')
     } else {
-      setError("An account with this email already exists")
+      setError('An account with this email already exists')
     }
     setIsLoading(false)
   }
@@ -62,7 +62,7 @@ export default function RegisterPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
-      <main className="flex flex-1 items-center justify-center px-4 py-12">
+      <main className="flex flex-1 items-center justify-center px-4 py-12 mt-32 border-t-4 border-foreground">
         <div className="w-full max-w-md border-4 border-foreground bg-card p-8 shadow-brutal">
           <div className="mb-8 text-center">
             <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center border-4 border-primary bg-primary shadow-[4px_4px_0_0_rgb(var(--foreground))]">
@@ -119,7 +119,7 @@ export default function RegisterPage() {
               <div className="relative">
                 <Input
                   id="password"
-                  type={showPassword ? "text" : "password"}
+                  type={showPassword ? 'text' : 'password'}
                   placeholder="Create a password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -139,13 +139,15 @@ export default function RegisterPage() {
                   <div key={i} className="flex items-center gap-3">
                     <div
                       className={`flex h-5 w-5 items-center justify-center border-2 ${
-                        req.met ? "border-green-500 bg-green-500" : "border-foreground bg-background"
+                        req.met ? 'border-green-500 bg-green-500' : 'border-foreground bg-background'
                       }`}
                     >
                       {req.met && <Check className="h-3 w-3 text-background" />}
                     </div>
                     <span
-                      className={`text-xs font-mono font-bold uppercase tracking-wider ${req.met ? "text-green-500" : "text-muted-foreground"}`}
+                      className={`text-xs font-mono font-bold uppercase tracking-wider ${
+                        req.met ? 'text-green-500' : 'text-muted-foreground'
+                      }`}
                     >
                       {req.text}
                     </span>
@@ -169,7 +171,29 @@ export default function RegisterPage() {
               />
             </div>
 
-            <div className="flex items-start gap-3">
+            <div className="flex flex-col gap-3">
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="terms"
+                  checked={agreeTerms}
+                  onCheckedChange={(checked) => setAgreeTerms(checked as boolean)}
+                  className="mt-1 border-2 border-foreground data-[state=checked]:border-primary data-[state=checked]:bg-primary"
+                />
+                <p>I agree to the </p>
+              </div>
+              <div className="">
+                <Label htmlFor="terms" className="text-xs font-bold uppercase leading-tight tracking-wider">
+                  <Link href="#" className="text-primary underline">
+                    Terms of Service
+                  </Link>{' '}
+                  and{' '}
+                  <Link href="#" className="text-primary underline">
+                    Privacy Policy
+                  </Link>
+                </Label>
+              </div>
+            </div>
+            {/* <div className="flex items-start gap-3">
               <Checkbox
                 id="terms"
                 checked={agreeTerms}
@@ -177,29 +201,29 @@ export default function RegisterPage() {
                 className="mt-1 border-2 border-foreground data-[state=checked]:border-primary data-[state=checked]:bg-primary"
               />
               <Label htmlFor="terms" className="text-xs font-bold uppercase leading-tight tracking-wider">
-                I agree to the{" "}
+                I agree to the{' '}
                 <Link href="#" className="text-primary underline">
                   Terms of Service
-                </Link>{" "}
-                and{" "}
+                </Link>{' '}
+                and{' '}
                 <Link href="#" className="text-primary underline">
                   Privacy Policy
                 </Link>
               </Label>
-            </div>
+            </div> */}
 
             <Button
               type="submit"
               className="w-full border-4 border-foreground bg-primary font-mono text-base font-black uppercase tracking-wider shadow-[4px_4px_0_0_rgb(var(--foreground))] hover:shadow-[6px_6px_0_0_rgb(var(--foreground))] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all"
               disabled={isLoading}
             >
-              {isLoading ? "Creating..." : "Create Account"}
+              {isLoading ? 'Creating...' : 'Create Account'}
             </Button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-sm uppercase tracking-wider text-muted-foreground">
-              Already have an account?{" "}
+              Already have an account?{' '}
               <Link href="/login" className="font-bold text-primary hover:underline">
                 Sign in
               </Link>

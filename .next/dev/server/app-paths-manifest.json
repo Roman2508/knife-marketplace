@@ -1,8 +1,0 @@
-{
-  "/browse/page": "app/browse/page.js",
-  "/item/[id]/page": "app/item/[id]/page.js",
-  "/messages/page": "app/messages/page.js",
-  "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/sell/page": "app/sell/page.js"
-}
