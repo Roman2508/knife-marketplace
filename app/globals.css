@@ -5,14 +5,23 @@
 
 /* Added RGB color variables for brutalist shadow effects */
 :root {
-  --background: oklch(1 0 0);
+  /*   --background: oklch(1 0 0);
   --foreground: oklch(0.12 0 0);
   --card: oklch(0.99 0 0);
   --card-foreground: oklch(0.12 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.12 0 0);
-  --primary: oklch(0.65 0.25 280);
+  --primary: #7b76ff;
   --primary-foreground: oklch(0.99 0 0);
+  --primary-rgb: 132, 59, 255; */
+  --background: #ffffff;
+  --foreground: #060606;
+  --card: #fcfcfc;
+  --card-foreground: #060606;
+  --popover: #ffffff;
+  --popover-foreground: #060606;
+  --primary: #7b76ff;
+  --primary-foreground: #fcfcfc;
   --primary-rgb: 132, 59, 255;
   --secondary: oklch(0.96 0 0);
   --secondary-foreground: oklch(0.18 0 0);

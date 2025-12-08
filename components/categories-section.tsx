@@ -8,6 +8,11 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import KnifeIcon from "../assets/knife-white-icon.svg";
+import KnifePrimaryIcon from "../assets/knife-primary-icon.svg";
+import SharpenerStoneIcon from "../assets/sharpener-stone-white-icon.svg";
+import SharpenerStonePrimaryIcon from "../assets/sharpener-stone-primary-icon.svg";
+
 export function CategoriesSection() {
   return (
     <section className="relative overflow-hidden border-y-8 border-foreground bg-muted py-24">
@@ -39,14 +44,20 @@ export function CategoriesSection() {
           <Link href="/browse?category=knife" className="group">
             <div className="relative overflow-hidden border-4 border-foreground bg-background p-12 transition-all duration-500 hover:border-primary hover:shadow-[12px_12px_0px_0px_rgba(var(--primary-rgb),0.5)] hover:-rotate-1">
               {/* Large background icon */}
-              <div className="absolute -right-12 -top-12 opacity-5">
-                <Knife className="h-64 w-64 text-primary" />
+              <div className="absolute -right-15 -top-15 opacity-5">
+                {/* <Knife className="h-64 w-64 text-primary" /> */}
+                <img alt="" src={KnifePrimaryIcon.src} className="h-74 w-74" />
               </div>
 
               <div className="relative">
                 {/* Icon box */}
                 <div className="mb-8 inline-flex border-4 border-foreground bg-primary p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                  <Knife className="h-16 w-16 text-background" />
+                  {/* <Knife className="h-16 w-16 text-background" /> */}
+                  <img
+                    alt=""
+                    src={KnifeIcon.src}
+                    className="h-20 w-20 text-background"
+                  />
                 </div>
 
                 {/* Content */}
@@ -76,14 +87,25 @@ export function CategoriesSection() {
           <Link href="/browse?category=watch" className="group">
             <div className="relative overflow-hidden border-4 border-foreground bg-background p-12 transition-all duration-500 hover:border-accent hover:shadow-[12px_12px_0px_0px_rgba(var(--accent-rgb),0.5)] hover:rotate-1">
               {/* Large background icon */}
-              <div className="absolute -left-12 -bottom-12 opacity-5">
-                <Watch className="h-64 w-64 text-accent" />
+              <div className="absolute -right-15 -top-15 opacity-7">
+                {/* <Watch className="h-64 w-64 text-accent" /> */}
+                <img
+                  alt=""
+                  src={SharpenerStonePrimaryIcon.src}
+                  className="h-74 w-74 text-accent"
+                />
               </div>
 
               <div className="relative">
                 {/* Icon box */}
-                <div className="mb-8 inline-flex border-4 border-foreground bg-accent p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                  <Watch className="h-16 w-16 text-background" />
+                {/* p-6 */}
+                <div className="mb-8 inline-flex border-4 border-foreground bg-accent p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                  {/* <Watch className="h-16 w-16 text-background" /> */}
+                  <img
+                    alt=""
+                    src={SharpenerStoneIcon.src}
+                    className="h-24 w-24 text-background"
+                  />
                 </div>
 
                 {/* Content */}

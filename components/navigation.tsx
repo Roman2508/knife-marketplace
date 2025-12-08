@@ -76,7 +76,7 @@ export function Navigation() {
                     : "bg-background text-foreground"
                 )}
               >
-                {link.icon && <link.icon className="h-4 w-4" />}
+                {/* {link.icon && <link.icon className="h-4 w-4" />} */}
                 {link.label}
               </Link>
             ))}
