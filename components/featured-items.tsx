@@ -5,7 +5,7 @@ import { useAppStore } from '@/lib/store'
 import { ItemCard } from '@/components/item-card'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, TrendingUp, Zap } from 'lucide-react'
-
+  
 export function FeaturedItems() {
   const { items } = useAppStore()
   const featuredItems = items.filter((item) => item.status === 'approved').slice(0, 6)
