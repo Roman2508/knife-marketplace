@@ -1,5 +1,11 @@
-import Link from "next/link"
-import { PocketKnife as Knife, Watch, Mail, Github, Twitter } from "lucide-react"
+import Link from "next/link";
+import {
+  PocketKnife as Knife,
+  Watch,
+  Mail,
+  Github,
+  Twitter,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,19 +16,25 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="group inline-block">
               <div className="mb-6 inline-flex items-center gap-3 border-4 border-foreground bg-primary p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all group-hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] group-hover:translate-x-1 group-hover:translate-y-1">
-                <span className="font-mono text-2xl font-black text-background">E</span>
-                <span className="text-2xl font-black uppercase tracking-tighter text-background">DGE</span>
+                <span className="font-mono text-2xl font-black text-background">
+                  E
+                </span>
+                <span className="text-2xl font-black uppercase tracking-tighter text-background">
+                  DGE
+                </span>
               </div>
             </Link>
             <p className="border-l-4 border-primary pl-4 text-sm font-bold uppercase leading-relaxed tracking-wide text-muted-foreground">
-              The premier marketplace for collectors
+              Вторинний ринок для колекціонерів
             </p>
           </div>
 
           {/* Marketplace links */}
           <div>
             <div className="mb-6 inline-flex border-b-4 border-foreground pb-2">
-              <h3 className="text-sm font-black uppercase tracking-widest">Marketplace</h3>
+              <h3 className="text-sm font-black uppercase tracking-widest">
+                Marketplace
+              </h3>
             </div>
             <ul className="space-y-3">
               <li>
@@ -60,7 +72,9 @@ export function Footer() {
           {/* Support links */}
           <div>
             <div className="mb-6 inline-flex border-b-4 border-foreground pb-2">
-              <h3 className="text-sm font-black uppercase tracking-widest">Support</h3>
+              <h3 className="text-sm font-black uppercase tracking-widest">
+                Support
+              </h3>
             </div>
             <ul className="space-y-3">
               <li>
@@ -96,7 +110,9 @@ export function Footer() {
           {/* Legal & Social */}
           <div>
             <div className="mb-6 inline-flex border-b-4 border-foreground pb-2">
-              <h3 className="text-sm font-black uppercase tracking-widest">Connect</h3>
+              <h3 className="text-sm font-black uppercase tracking-widest">
+                Connect
+              </h3>
             </div>
             <ul className="mb-6 space-y-3">
               <li>
@@ -154,5 +170,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

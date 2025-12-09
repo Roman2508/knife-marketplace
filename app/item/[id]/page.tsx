@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { use, useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { Navigation } from '@/components/navigation'
-import { Footer } from '@/components/footer'
-import { useAppStore } from '@/lib/store'
-import { Button } from '@/components/ui/button'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { ReviewForm } from '@/components/review-form'
+import { use, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { useAppStore } from "@/lib/store";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ReviewForm } from "@/components/review-form";
 import {
   Star,
   MessageSquare,
@@ -21,25 +21,29 @@ import {
   MapPin,
   CheckCircle,
   ShoppingCart,
-} from 'lucide-react'
+} from "lucide-react";
 
 const conditionColors = {
-  new: 'border-green-500 bg-green-500/20 text-green-500',
-  'like-new': 'border-blue-500 bg-blue-500/20 text-blue-500',
-  good: 'border-yellow-500 bg-yellow-500/20 text-yellow-500',
-  fair: 'border-orange-500 bg-orange-500/20 text-orange-500',
-}
+  new: "border-green-500 bg-green-500/20 text-green-500",
+  "like-new": "border-blue-500 bg-blue-500/20 text-blue-500",
+  good: "border-yellow-500 bg-yellow-500/20 text-yellow-500",
+  fair: "border-orange-500 bg-orange-500/20 text-orange-500",
+};
 
-export default function ItemDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params)
-  const router = useRouter()
-  const { items, users, reviews, currentUser } = useAppStore()
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const [reviewKey, setReviewKey] = useState(0)
+export default function ItemDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = use(params);
+  const router = useRouter();
+  const { items, users, reviews, currentUser } = useAppStore();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [reviewKey, setReviewKey] = useState(0);
 
-  const item = items.find((i) => i.id === id)
-  const seller = users.find((u) => u.id === item?.sellerId)
-  const itemReviews = reviews.filter((r) => r.itemId === id)
+  const item = items.find((i) => i.id === id);
+  const seller = users.find((u) => u.id === item?.sellerId);
+  const itemReviews = reviews.filter((r) => r.itemId === id);
 
   if (!item) {
     return (
@@ -47,7 +51,9 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
         <Navigation />
         <main className="flex flex-1 items-center justify-center px-4">
           <div className="border-4 border-foreground bg-card p-12 text-center shadow-brutal">
-            <h1 className="font-mono text-3xl font-black uppercase tracking-tighter">Item Not Found</h1>
+            <h1 className="font-mono text-3xl font-black uppercase tracking-tighter">
+              Item Not Found
+            </h1>
             <p className="mt-4 font-mono text-sm font-bold uppercase tracking-wider text-muted-foreground">
               Removed or doesn&apos;t exist
             </p>
@@ -61,16 +67,18 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
         </main>
         <Footer />
       </div>
-    )
+    );
   }
 
   const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % item.images.length)
-  }
+    setCurrentImageIndex((prev) => (prev + 1) % item.images.length);
+  };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + item.images.length) % item.images.length)
-  }
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + item.images.length) % item.images.length
+    );
+  };
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -90,14 +98,14 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
         </div>
 
         <div className="mx-auto max-w-7xl px-4 py-8">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="space-y-4">
+          <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
+            <div className="space-y-4 w-full max-w-xl mx-auto">
               <div className="relative aspect-square overflow-hidden border-4 border-foreground bg-secondary shadow-brutal">
                 <Image
                   fill
                   alt={item.title}
                   className="object-cover"
-                  src={item.images[currentImageIndex] || '/placeholder.svg'}
+                  src={item.images[currentImageIndex] || "/placeholder.svg"}
                 />
                 {item.images.length > 1 && (
                   <>
@@ -119,7 +127,9 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                           key={index}
                           onClick={() => setCurrentImageIndex(index)}
                           className={`h-3 w-3 border-2 border-foreground transition-colors ${
-                            index === currentImageIndex ? 'bg-primary' : 'bg-background'
+                            index === currentImageIndex
+                              ? "bg-primary"
+                              : "bg-background"
                           }`}
                         />
                       ))}
@@ -135,11 +145,13 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
                       className={`relative h-24 w-24 shrink-0 overflow-hidden border-4 border-foreground bg-secondary shadow-[2px_2px_0_0_rgb(var(--foreground))] ${
-                        index === currentImageIndex ? 'opacity-100' : 'opacity-50 hover:opacity-100'
+                        index === currentImageIndex
+                          ? "opacity-100"
+                          : "opacity-50 hover:opacity-100"
                       }`}
                     >
                       <Image
-                        src={image || '/placeholder.svg'}
+                        src={image || "/placeholder.svg"}
                         alt={`${item.title} ${index + 1}`}
                         fill
                         className="object-cover"
@@ -158,7 +170,7 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                       conditionColors[item.condition]
                     }`}
                   >
-                    {item.condition.replace('-', ' ')}
+                    {item.condition.replace("-", " ")}
                   </div>
                   <div className="border-4 border-foreground bg-accent px-4 py-2 font-mono text-xs font-black uppercase text-background">
                     {item.category}
@@ -209,35 +221,44 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
               </div>
 
               <div className="border-4 border-foreground bg-card p-6 shadow-brutal">
-                <h2 className="mb-3 font-mono text-lg font-black uppercase tracking-tighter">Description</h2>
-                <p className="font-mono text-sm font-bold uppercase leading-relaxed tracking-wider text-muted-foreground">
+                <h2 className="mb-3 font-mono text-lg font-black uppercase tracking-tighter">
+                  Description
+                </h2>
+                <p className="font-mono text-sm font-bold leading-relaxed tracking-wider text-muted-foreground">
                   {item.description}
                 </p>
               </div>
 
               <div className="border-4 border-foreground bg-card p-6 shadow-brutal">
-                <h2 className="mb-4 font-mono text-lg font-black uppercase tracking-tighter">Specifications</h2>
+                <h2 className="mb-4 font-mono text-lg font-black uppercase tracking-tighter">
+                  Specifications
+                </h2>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {Object.entries(item.specs).map(([key, value]) => (
-                    <div key={key} className="border-4 border-foreground bg-secondary p-3">
+                    <div
+                      key={key}
+                      className="border-4 border-foreground bg-secondary p-3"
+                    >
                       <p className="font-mono text-xs font-bold uppercase tracking-wider text-muted-foreground">
                         {key}
                       </p>
 
-                      <p className="mt-1 font-mono text-sm font-black uppercase tracking-wider">{value}</p>
+                      <p className="mt-1 font-mono text-sm font-black uppercase tracking-wider">
+                        {value}
+                      </p>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div className="border-4 border-foreground bg-card p-6 shadow-brutal">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between flex-wrap gap-4">
                   <div className="flex items-center gap-4">
                     <Avatar className="h-14 w-14 border-4 border-foreground">
-                      <AvatarImage src={seller?.avatar || '/placeholder.svg'} />
+                      <AvatarImage src={seller?.avatar || "/placeholder.svg"} />
                       <AvatarFallback className="bg-primary font-mono font-black text-background">
-                        {seller?.username[0] || 'S'}
+                        {seller?.username[0] || "S"}
                       </AvatarFallback>
                     </Avatar>
                     <div>
@@ -270,7 +291,7 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                 <div className="mt-4 flex flex-col gap-2 font-mono text-xs font-bold uppercase tracking-wider text-muted-foreground sm:flex-row sm:items-center sm:gap-4">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4" />
-                    {seller?.location || 'Location not specified'}
+                    {seller?.location || "Location not specified"}
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4" />
@@ -282,7 +303,9 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
               <div className="flex items-center gap-4 border-4 border-primary bg-primary/10 p-6 shadow-brutal">
                 <Shield className="h-10 w-10 text-primary" />
                 <div>
-                  <p className="font-mono text-base font-black uppercase tracking-tighter">Buyer Protection</p>
+                  <p className="font-mono text-base font-black uppercase tracking-tighter">
+                    Buyer Protection
+                  </p>
                   <p className="mt-1 font-mono text-xs font-bold uppercase tracking-wider text-muted-foreground">
                     All transactions protected
                   </p>
@@ -309,12 +332,24 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
             <div className="grid gap-6 lg:grid-cols-3">
               {currentUser && currentUser.id !== item.sellerId && (
                 <div className="lg:col-span-1">
-                  <ReviewForm itemId={id} onSuccess={() => setReviewKey((k) => k + 1)} />
+                  <ReviewForm
+                    itemId={id}
+                    onSuccess={() => setReviewKey((k) => k + 1)}
+                  />
                 </div>
               )}
 
-              <div className={currentUser && currentUser.id !== item.sellerId ? 'lg:col-span-2' : 'lg:col-span-3'}>
-                <div className="border-4 border-foreground bg-card shadow-brutal" key={reviewKey}>
+              <div
+                className={
+                  currentUser && currentUser.id !== item.sellerId
+                    ? "lg:col-span-2"
+                    : "lg:col-span-3"
+                }
+              >
+                <div
+                  className="border-4 border-foreground bg-card shadow-brutal"
+                  key={reviewKey}
+                >
                   <div className="border-b-4 border-foreground bg-secondary p-6">
                     <h2 className="font-mono text-2xl font-black uppercase tracking-tighter">
                       Відгуки ({itemReviews.length})
@@ -330,7 +365,9 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                           >
                             <div className="flex items-center gap-3">
                               <Avatar className="h-12 w-12 border-4 border-foreground">
-                                <AvatarImage src={review.avatar || '/placeholder.svg'} />
+                                <AvatarImage
+                                  src={review.avatar || "/placeholder.svg"}
+                                />
                                 <AvatarFallback className="bg-primary font-mono font-black text-background">
                                   {review.username[0]}
                                 </AvatarFallback>
@@ -344,7 +381,9 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                                     <Star
                                       key={i}
                                       className={`h-4 w-4 ${
-                                        i < review.rating ? 'fill-primary text-primary' : 'text-muted-foreground'
+                                        i < review.rating
+                                          ? "fill-primary text-primary"
+                                          : "text-muted-foreground"
                                       }`}
                                     />
                                   ))}
@@ -354,7 +393,7 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
                                 </div>
                               </div>
                             </div>
-                            <p className="mt-3 font-mono text-sm font-bold uppercase leading-relaxed tracking-wider text-muted-foreground">
+                            <p className="mt-3 font-mono text-sm font-bold leading-relaxed tracking-wider text-muted-foreground">
                               {review.comment}
                             </p>
                           </div>
@@ -374,5 +413,5 @@ export default function ItemDetailPage({ params }: { params: Promise<{ id: strin
       </main>
       <Footer />
     </div>
-  )
+  );
 }

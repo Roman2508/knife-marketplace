@@ -27,9 +27,11 @@ export function HeroSection() {
                 <span className="block border-8 border-foreground bg-primary px-4 py-2 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-primary-foreground shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] my-2">
                   НОЖІ
                 </span>
-                {/* <span className="block text-6xl sm:text-7xl lg:text-8xl">&</span>
+                {/* <span className="block text-6xl sm:text-7xl lg:text-8xl">
+                  &
+                </span>
                 <span className="block border-8 border-foreground bg-accent px-4 py-2 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] my-2">
-                  ГОДИННИКИ
+                  АКСЕСУАРИ
                 </span> */}
               </h1>
 
@@ -149,12 +151,12 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -bottom-6 -left-6 border-4 border-foreground bg-accent p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] dark:shadow-[10px_10px_0px_0px_rgba(255,255,255,1)]">
+            {/* <div className="absolute -bottom-6 -left-6 border-4 border-foreground bg-accent p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] dark:shadow-[10px_10px_0px_0px_rgba(255,255,255,1)]">
               <div className="text-4xl font-black uppercase">₴2.4M+</div>
               <div className="text-sm font-bold uppercase tracking-wider">
                 Total Sales
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
